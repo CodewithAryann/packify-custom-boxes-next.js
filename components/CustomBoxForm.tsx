@@ -58,8 +58,8 @@ export default function CustomBoxForm() {
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md space-y-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className="block text-sm font-medium text-gray-600 mb-1">Box Type:</label>
-            <select name="box_type" required className="w-full border p-2 rounded">
+            <label className="block text-sm font-medium text-gray-800 mb-1">Box Type:</label>
+            <select name="box_type" required className="w-full border p-2 rounded text-gray-800">
               <option>Mailer Box</option>
               <option>Tuck Boxes</option>
               <option>Rigid Box</option>
@@ -71,13 +71,13 @@ export default function CustomBoxForm() {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-600 mb-1">Product Type:</label>
-            <input type="text" name="product_type" placeholder="Candle etc" className="w-full border p-2 rounded" />
+            <label className="block text-sm font-medium text-gray-800 mb-1">Product Type:</label>
+            <input type="text" name="product_type" placeholder="Candle etc" className="w-full border p-2 rounded text-gray-800" />
           </div>
         </div>
 
-        <label className="block text-sm font-medium text-gray-600 mt-2">Interior Dimensions:</label>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <label className="block text-sm font-medium text-gray-800 mt-2">Interior Dimensions:</label>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-gray-800">
           <input type="text" name="length" placeholder="Length" className="w-full border p-2 rounded" />
           <input type="text" name="width" placeholder="Width" className="w-full border p-2 rounded" />
           <input type="text" name="depth" placeholder="Depth" className="w-full border p-2 rounded" />
@@ -88,8 +88,8 @@ export default function CustomBoxForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-600 mb-1">Material:</label>
-          <select name="material" className="w-full border p-2 rounded">
+          <label className="block text-sm font-medium text-gray-800 mb-1">Material:</label>
+          <select name="material" className="w-full border p-2 rounded text-gray-800">
             <option value="">Select Material</option>
             <option>Cardboard Boxes</option>
             <option>Corrugated Boxes</option>
@@ -102,24 +102,24 @@ export default function CustomBoxForm() {
           name="additional_info"
           rows={4}
           placeholder="Additional Info"
-          className="w-full border p-3 rounded"
+          className="w-full border p-3 rounded text-gray-800"
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-gray-800">
           <input type="text" name="name" placeholder="Name*" required className="w-full border p-2 rounded" />
           <input type="email" name="email" placeholder="Email*" required className="w-full border p-2 rounded" />
           <input type="tel" name="phone" placeholder="Phone" className="w-full border p-2 rounded" />
         </div>
 
         <div>
-          <label htmlFor="file" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="file" className="block text-sm font-medium text-gray-800">
             Attach Design or Reference File (optional)
           </label>
           <input
             type="file"
             id="file"
             name="file"
-            className="mt-1 w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-600 hover:file:bg-orange-100 transition"
+            className="mt-1 w-full text-sm text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-600 hover:file:bg-orange-100 transition"
           />
         </div>
 

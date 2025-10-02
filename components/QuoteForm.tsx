@@ -46,7 +46,7 @@ export default function QuoteForm() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Name */}
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-800">
                 Full Name
               </label>
               <input
@@ -54,13 +54,13 @@ export default function QuoteForm() {
                 id="name"
                 name="name"
                 required
-                className="mt-1 w-full border border-gray-300 rounded-md shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="mt-1 w-full border border-gray-300 rounded-md text-gray-800 shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
               />
             </div>
 
             {/* Email */}
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-800">
                 Email Address
               </label>
               <input
@@ -68,40 +68,40 @@ export default function QuoteForm() {
                 id="email"
                 name="email"
                 required
-                className="mt-1 w-full border border-gray-300 rounded-md shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="mt-1 w-full border border-gray-300 text-gray-800 rounded-md shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
               />
             </div>
 
             {/* Company */}
             <div>
-              <label htmlFor="company" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="company" className="block text-sm font-medium text-gray-800">
                 Company Name
               </label>
               <input
                 type="text"
                 id="company"
                 name="company"
-                className="mt-1 w-full border border-gray-300 rounded-md shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="mt-1 w-full border border-gray-300 text-gray-800 rounded-md shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
               />
             </div>
 
             {/* Phone */}
             <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="phone" className="block text-sm font-medium text-gray-800">
                 Phone Number
               </label>
               <input
                 type="tel"
                 id="phone"
                 name="phone"
-                className="mt-1 w-full border border-gray-300 rounded-md shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="mt-1 w-full border border-gray-300 text-gray-800 rounded-md shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
               />
             </div>
           </div>
 
           {/* Project Description */}
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="message" className="block text-sm font-medium text-gray-800">
               Project Details
             </label>
             <textarea
@@ -109,21 +109,21 @@ export default function QuoteForm() {
               name="message"
               rows={5}
               required
-              className="mt-1 w-full border border-gray-300 rounded-md shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="mt-1 w-full border border-gray-300 text-gray-800 rounded-md shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder="Tell us about the box style, size, quantity, and any other requirements..."
             />
           </div>
 
           {/* File Upload */}
           <div>
-            <label htmlFor="file" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="file" className="block text-sm font-medium text-gray-800">
               Attach Design or Reference File (optional)
             </label>
             <input
               type="file"
               id="file"
               name="file"
-              className="mt-1 w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-600 hover:file:bg-orange-100 transition"
+              className="mt-1 w-full text-sm text-gray-700 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-600 hover:file:bg-orange-100 transition"
             />
           </div>
 

@@ -16,7 +16,7 @@ export default function TrustedBy() {
   return (
     <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-2xl md:text-4xl font-extrabold text-gray-800 mb-10">
+        <h2 className="text-2xl md:text-4xl font-extrabold text-black mb-10">
           Trusted By <span className="text-orange-500">3,000+</span> Businesses
         </h2>
 

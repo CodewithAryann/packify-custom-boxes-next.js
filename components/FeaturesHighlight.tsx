@@ -25,7 +25,7 @@ export default function FeaturesHighlight() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-2xl shadow transition hover:bg-[#f97316] hover:text-white"
+              className="bg-white p-6 text-gray-700 rounded-2xl shadow transition hover:bg-[#f97316] hover:text-white"
             >
               <p className="font-semibold">{feature}</p>
             </div>

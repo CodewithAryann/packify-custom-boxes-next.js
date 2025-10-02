@@ -77,7 +77,7 @@ export default function ProductGrid() {
         <h2 className="text-4xl font-extrabold text-orange-500 mb-4">
           <span className="text-black">Custom Printed</span> Boxes
         </h2>
-        <p className="text-gray-600 text-lg mb-12">
+        <p className="text-black text-lg mb-12">
           Explore custom boxes that are stylish and functional, perfectly crafted to showcase, store, and protect your
           products.
         </p>
@@ -106,7 +106,7 @@ export default function ProductGrid() {
                 />
               </div>
               <div className="p-5 text-left">
-                <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
+                <h3 className="text-xl text-black font-semibold mb-2">{product.name}</h3>
                 <p className="text-gray-600 text-sm mb-4">{product.description}</p>
               </div>
             </Link>

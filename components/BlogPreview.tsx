@@ -29,7 +29,7 @@ export default function BlogPreview() {
   return (
     <section className="max-w-6xl mx-auto px-4 py-16 pt-1">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">
+        <h2 className="text-2xl font-semibold text-gray-700">
           Latest from the <span className="text-[#f97316]">Blog</span>
         </h2>
         <Link href="/blog" className="text-orange-600 hover:underline font-medium text-sm">
@@ -49,7 +49,7 @@ export default function BlogPreview() {
               />
             </div>
             <div className="p-4">
-              <h3 className="text-lg font-semibold mb-2">{post.title}</h3>
+              <h3 className="text-lg font-semibold mb-2 text-gray-700">{post.title}</h3>
               <p className="text-gray-600 text-sm mb-3">{post.description}</p>
               <Link href={post.link} className="text-orange-600 hover:underline text-sm font-medium">
                 Read More →
