@@ -9,7 +9,7 @@ export default function BlogPageClient() {
   const blogPosts = [
     {
       id: 'modal1',
-      image: '/Images/blog-1.webp',
+      image: '/images/blog-1.webp',
       title: 'Top Eco-Friendly Packaging Trends in 2025',
       excerpt:
         'Explore the latest innovations in sustainable packaging and how your business can benefit from eco-conscious design.',
@@ -18,7 +18,7 @@ export default function BlogPageClient() {
     },
     {
     id: 'modal2',
-    image: '/Images/7431d978-5343-43e7-a52c-f9d191f5fa3c.webp',
+    image: '/images/7431d978-5343-43e7-a52c-f9d191f5fa3c.webp',
     title: 'Why Custom Packaging Boosts Brand Value',
     excerpt:
       'Understand how investing in custom packaging can elevate customer experience and increase brand loyalty.',
@@ -27,7 +27,7 @@ export default function BlogPageClient() {
   },
   {
     id: 'modal3',
-    image: '/Images/55fad4b1-e051-4852-b8d0-eb5b829404f5.webp',
+    image: '/images/55fad4b1-e051-4852-b8d0-eb5b829404f5.webp',
     title: 'Comparing Box Styles: Mailer vs. Rigid vs. Folding',
     excerpt:
       'A quick guide to choosing the right box style based on your product, budget, and delivery method.',
@@ -36,7 +36,7 @@ export default function BlogPageClient() {
   },
   {
     id: 'modal4',
-    image: '/Images/blog-4.webp',
+    image: '/images/blog-4.webp',
     title: 'The Future of Packaging Manufacturing',
     excerpt:
       'Discover how automation, robotics, and AI are transforming packaging production lines for speed, quality, and customization.',
@@ -45,7 +45,7 @@ export default function BlogPageClient() {
   },
   {
     id: 'modal5',
-    image: '/Images/b3335717-f960-441e-be31-095cc9a6ece1.webp',
+    image: '/images/b3335717-f960-441e-be31-095cc9a6ece1.webp',
     title: 'Design Tips for Eye-Catching Packaging',
     excerpt:
       'Use color psychology, minimalism, and brand identity to create packaging that stands out on the shelf and online.',
@@ -54,7 +54,7 @@ export default function BlogPageClient() {
   },
   {
     id: 'modal6',
-    image: '/Images/7bba248f-53b0-4323-90eb-06dcc94c0f05.webp',
+    image: '/images/7bba248f-53b0-4323-90eb-06dcc94c0f05.webp',
     title: 'Why Custom Packaging Boosts Brand Value',
     excerpt:
       'How Packaging Affects Shipping Costs',
