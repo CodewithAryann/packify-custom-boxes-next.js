@@ -14,7 +14,6 @@ type Props = {
   params: { slug: string }
 }
 
-// ---- Modal Component ----
 function ProductModal({
   isOpen,
   onClose,
@@ -31,8 +30,9 @@ function ProductModal({
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-2xl p-6 max-w-md w-full relative shadow-2xl">
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4">
+      <div className="bg-white rounded-2xl p-6 max-w-4xl w-full relative shadow-2xl flex flex-col md:flex-row gap-6">
+        {/* Close Button */}
         <button
           onClick={onClose}
           className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-lg"
@@ -40,32 +40,38 @@ function ProductModal({
           ✕
         </button>
 
+        {/* Image on Left */}
         {image && (
-          <img
-            src={image}
-            alt={title}
-            className="rounded-xl mb-4 w-full h-48 object-cover"
-          />
+          <div className="w-full md:w-1/2 h-64 md:h-auto rounded-xl overflow-hidden">
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-full object-cover rounded-xl"
+            />
+          </div>
         )}
 
-        <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
+        {/* Details on Right */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">{title}</h2>
+          <p className="text-gray-600 text-sm mb-6">
+            {description
+              ? description
+              : `Learn more about our ${title?.toLowerCase()} — designed for quality, protection, and premium presentation. Perfect for your custom packaging needs.`}
+          </p>
 
-        <p className="text-gray-600 text-sm mb-6">
-          {description
-            ? description
-            : `Learn more about our ${title?.toLowerCase()} — designed for quality, protection, and premium presentation. Perfect for your custom packaging needs.`}
-        </p>
-
-        <a
-          href="/get-quote"
-          className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-5 py-2 rounded-md font-medium"
-        >
-          Request a Quote
-        </a>
+          <a
+            href="/get-quote"
+            className="inline-block w-[41%] bg-orange-600 hover:bg-orange-700 text-white px-5 py-2 rounded-md font-medium"
+          >
+            Request a Quote
+          </a>
+        </div>
       </div>
     </div>
   )
 }
+
 
 // ---- Product Page ----
 export default function ProductPage({ params }: Props) {
@@ -165,7 +171,8 @@ export default function ProductPage({ params }: Props) {
       )}
 
       {/* Materials, Printing, Finishes Tabs */}
-      <ProductTabs />
+      <ProductTabs productSlug={params.slug} />
+
 
       {/* Product Overview Section */}
       <ProductOverview product={product} />

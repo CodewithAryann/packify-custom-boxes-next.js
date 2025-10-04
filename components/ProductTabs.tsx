@@ -2,11 +2,33 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { materialsData, printingData, finishesData, boxStylesData } from '@/lib/tabs-data'
+import { 
+  materialsData, 
+  printingData, 
+  finishesData, 
+  boxStylesData 
+} from '@/lib/tabs-data'
 
 type TabType = 'materials' | 'printing' | 'finishes' | 'boxStyles'
 
-export default function ProductTabs() {
+type ProductTabsProps = {
+  productSlug: string
+}
+
+// List of products that should show tabs
+const TAB_PRODUCTS = [
+  'mailer-boxes',
+  'dispenser-boxes',
+  'rigid-boxes',
+  'tuck-boxes',
+  'magnetic-closure'
+  // add other box slugs that need tabs
+]
+
+export default function ProductTabs({ productSlug }: ProductTabsProps) {
+  // Only render tabs if this product slug is allowed
+  if (!TAB_PRODUCTS.includes(productSlug)) return null
+
   const [activeTab, setActiveTab] = useState<TabType>('materials')
 
   const tabs = [
@@ -19,15 +41,15 @@ export default function ProductTabs() {
   const getTabData = () => {
     switch (activeTab) {
       case 'materials':
-        return materialsData
+        return materialsData[productSlug] || []
       case 'printing':
-        return printingData
+        return printingData[productSlug] || []
       case 'finishes':
-        return finishesData
+        return finishesData[productSlug] || []
       case 'boxStyles':
-        return boxStylesData
+        return boxStylesData[productSlug] || []
       default:
-        return materialsData
+        return []
     }
   }
 
@@ -55,18 +77,16 @@ export default function ProductTabs() {
       {/* Tab Content */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {data.map((item, index) => (
-          <div
-            key={index}
-            className="text-center bg-white rounded-xl shadow-md hover:shadow-lg transition p-6"
-          >
-            <div className="relative w-full h-40 mb-4 rounded-lg overflow-hidden bg-gray-50">
-              <Image
-                src={item.image}
-                alt={item.name}
-                fill
-                className="object-contain p-2"
-              />
-            </div>
+          <div key={index} className="text-center bg-white rounded-xl shadow-md hover:shadow-lg transition p-6">
+           <div className="relative w-full h-40 mb-4 rounded-lg overflow-hidden bg-gray-50">
+  <Image
+    src={item.image}
+    alt={item.name}
+    fill
+    className="object-cover" // changed from object-contain to object-cover
+  />
+</div>
+
             <h3 className="font-semibold text-gray-800">{item.name}</h3>
             {item.description && (
               <p className="text-sm text-gray-600 mt-2">{item.description}</p>
