@@ -7,6 +7,7 @@ import PromoBanner from '@/components/PromoBanner'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import ClubPopup from '@/components/ClubPopup'
 import Script from 'next/script'
+import { Suspense } from 'react' // Import Suspense
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -44,7 +45,9 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <Header />
+        <Suspense fallback={null}>
+          <Header />
+        </Suspense>
         <PromoBanner />
         <main className="min-h-screen">{children}</main>
         <Footer />
