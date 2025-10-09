@@ -133,8 +133,8 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed top-[60px] left-0 w-full bg-black/95 text-white backdrop-blur-md shadow-lg transition-all duration-500 overflow-hidden ${
-          mobileMenuOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
+        className={`lg:hidden fixed left-0 w-full bg-black/60 backdrop-blur-md text-white transition-all duration-500 overflow-hidden ${
+          mobileMenuOpen ? 'opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="flex flex-col items-center py-4 space-y-3 text-lg font-medium">

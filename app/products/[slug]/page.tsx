@@ -1,6 +1,5 @@
 'use client'
 
-import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { useState } from 'react'
 import ProductDetail from '@/components/ProductDetail'
@@ -13,6 +12,8 @@ import { productsData } from '@/lib/products-data'
 type Props = {
   params: { slug: string }
 }
+
+// Remove the generateStaticParams function from here
 
 function ProductModal({
   isOpen,
