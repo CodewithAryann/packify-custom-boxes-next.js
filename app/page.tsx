@@ -11,6 +11,7 @@ import FAQSection from '@/components/FAQSection'
 import BlogPreview from '@/components/BlogPreview'
 import QuoteForm from '@/components/QuoteForm'
 import Testimonials from '@/components/Testimonials'
+import PromoBanner from '@/components/PromoBanner'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <BlogPreview />
       <QuoteForm />
       <Testimonials />
+      <PromoBanner/>      
     </>
   )
 }

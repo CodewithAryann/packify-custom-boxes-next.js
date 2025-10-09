@@ -48,7 +48,6 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <Header />
         </Suspense>
-        <PromoBanner />
         <main className="min-h-screen">{children}</main>
         <Footer />
         <WhatsAppButton />

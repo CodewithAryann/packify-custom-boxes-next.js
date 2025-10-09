@@ -16,7 +16,7 @@ export default function Hero() {
           </h1>
           <p className="text-lg sm:text-xl">
             Premium custom boxes designed to elevate your brand. Fully printed. Fast turnaround. Eco-conscious. Made to
-            impress — inside and out.
+            impress inside and out.
           </p>
           <p className="text-lg font-bold">
             Free U.S. Shipping. No Minimums. Delivered Worldwide.

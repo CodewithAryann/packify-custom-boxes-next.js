@@ -63,7 +63,7 @@ export default function Testimonials() {
   }, [])
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-10">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
           Loved by <span className="text-orange-500">Businesses Worldwide</span>

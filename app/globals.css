@@ -131,3 +131,21 @@ details summary {
 .image-loading {
   @apply bg-gray-200 animate-pulse;
 }
+
+/* === Swiper Custom Pagination Dots === */
+.swiper-pagination-bullet {
+  background-color: #f97316 !important; /* Website orange */
+  opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f97316 !important;
+  opacity: 1;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+/* Force Swiper wrapper height */
+.swiper-wrapper {
+  height: 21rem !important;
+}
