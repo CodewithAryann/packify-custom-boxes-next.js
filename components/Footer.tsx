@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 export default function Footer() {
   const pathname = usePathname()
 
-  // Helper: if already on homepage, just scroll smoothly
+  // Helper: smooth scroll if on homepage
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     if (pathname === '/') {
       e.preventDefault()
@@ -49,7 +49,7 @@ export default function Footer() {
 
         {/* Company */}
         <div className="text-center sm:text-left">
-          <h3 className="text-xl font-semibold mb-3">Company</h3>
+          <h2 className="text-xl font-semibold mb-3">Company</h2>
           <ul className="space-y-2">
             <li>
               <Link
@@ -86,7 +86,7 @@ export default function Footer() {
 
         {/* Contact */}
         <div className="text-center sm:text-left">
-          <h3 className="text-xl font-semibold mb-3">Contact</h3>
+          <h2 className="text-xl font-semibold mb-3">Contact</h2>
           <ul className="space-y-2">
             <li><i className="fas fa-phone mr-2"></i>+1 (201) 305-0858</li>
             <li>
@@ -101,7 +101,7 @@ export default function Footer() {
 
         {/* Help */}
         <div className="text-center sm:text-left">
-          <h3 className="text-xl font-semibold mb-3">Help</h3>
+          <h2 className="text-xl font-semibold mb-3">Help</h2>
           <ul className="space-y-2">
             <li><Link href="/how-to-order" className="hover:underline">How to Order</Link></li>
             <li>
@@ -113,7 +113,6 @@ export default function Footer() {
                 FAQ
               </Link>
             </li>
-            <li><Link href="/dieline-templates" className="hover:underline">Dieline Templates</Link></li>
             <li><Link href="/artwork-guidelines" className="hover:underline">Artwork Guidelines</Link></li>
             <li><Link href="/how-to-measure" className="hover:underline">How to Measure a Box</Link></li>
             <li><Link href="/blog" className="hover:underline">Blog</Link></li>
@@ -123,7 +122,7 @@ export default function Footer() {
 
       {/* Payment and Bottom Bar */}
       <div className="max-w-7xl mx-auto mt-10 border-t border-white/30 pt-6">
-        <h4 className="font-semibold text-lg mb-2 text-center">Payment Methods</h4>
+        <h2 className="font-semibold text-lg mb-2 text-center">Payment Methods</h2>
         <p className="mb-3 text-center text-sm">
           Our website is compatible with many popular payment methods. SSL 100% Secure Transactions.
         </p>
