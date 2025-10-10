@@ -9,9 +9,8 @@ export default function CustomBoxForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
     const formData = new FormData(e.currentTarget)
-    
+
     try {
       await fetch('https://usebasin.com/f/a24a59909c70', {
         method: 'POST',
@@ -31,10 +30,10 @@ export default function CustomBoxForm() {
       {/* Left Content */}
       <div className="bg-white p-6 sm:p-[3.9rem] rounded-2xl shadow-md relative overflow-hidden md:pt-[1.3rem]">
         <h2 className="text-3xl sm:text-2xl font-bold text-orange-400 mb-4 leading-tight">
-          Didn't find your desired product?
+          Didn&apos;t find your desired product?
         </h2>
         <p className="text-gray-600 text-base sm:text-lg mb-6">
-          Can't find exactly what you need? Just fill out the form, and our team will get in touch with a custom packaging
+          Can&apos;t find exactly what you need? Just fill out the form, and our team will get in touch with a custom packaging
           solution tailored to you.
         </p>
 
@@ -57,9 +56,13 @@ export default function CustomBoxForm() {
       {/* Right Form Block */}
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md space-y-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* Box Type */}
           <div>
-            <label className="block text-sm font-medium text-gray-800 mb-1">Box Type:</label>
-            <select name="box_type" required className="w-full border p-2 rounded text-gray-800">
+            <label htmlFor="box_type" className="block text-sm font-medium text-gray-800 mb-1">
+              Box Type:
+            </label>
+            <select id="box_type" name="box_type" required className="w-full border p-2 rounded text-gray-800">
+              <option value="">Select a box type</option>
               <option>Mailer Box</option>
               <option>Tuck Boxes</option>
               <option>Rigid Box</option>
@@ -70,26 +73,47 @@ export default function CustomBoxForm() {
               <option>Cosmetic Boxes</option>
             </select>
           </div>
+
+          {/* Product Type */}
           <div>
-            <label className="block text-sm font-medium text-gray-800 mb-1">Product Type:</label>
-            <input type="text" name="product_type" placeholder="Candle etc" className="w-full border p-2 rounded text-gray-800" />
+            <label htmlFor="product_type" className="block text-sm font-medium text-gray-800 mb-1">
+              Product Type:
+            </label>
+            <input
+              id="product_type"
+              type="text"
+              name="product_type"
+              placeholder="Candle etc"
+              className="w-full border p-2 rounded text-gray-800"
+            />
           </div>
         </div>
 
-        <label className="block text-sm font-medium text-gray-800 mt-2">Interior Dimensions:</label>
+        {/* Interior Dimensions */}
+        <label htmlFor="length" className="block text-sm font-medium text-gray-800 mt-2">
+          Interior Dimensions:
+        </label>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-gray-800">
-          <input type="text" name="length" placeholder="Length" className="w-full border p-2 rounded" />
-          <input type="text" name="width" placeholder="Width" className="w-full border p-2 rounded" />
-          <input type="text" name="depth" placeholder="Depth" className="w-full border p-2 rounded" />
-          <select name="unit" className="w-full border p-2 rounded">
-            <option>in</option>
-            <option>cm</option>
-          </select>
+          <input id="length" type="text" name="length" placeholder="Length" className="w-full border p-2 rounded" />
+          <input id="width" type="text" name="width" placeholder="Width" className="w-full border p-2 rounded" />
+          <input id="depth" type="text" name="depth" placeholder="Depth" className="w-full border p-2 rounded" />
+          <div>
+            <label htmlFor="unit" className="sr-only">
+              Unit
+            </label>
+            <select id="unit" name="unit" className="w-full border p-2 rounded">
+              <option>in</option>
+              <option>cm</option>
+            </select>
+          </div>
         </div>
 
+        {/* Material */}
         <div>
-          <label className="block text-sm font-medium text-gray-800 mb-1">Material:</label>
-          <select name="material" className="w-full border p-2 rounded text-gray-800">
+          <label htmlFor="material" className="block text-sm font-medium text-gray-800 mb-1">
+            Material:
+          </label>
+          <select id="material" name="material" className="w-full border p-2 rounded text-gray-800">
             <option value="">Select Material</option>
             <option>Cardboard Boxes</option>
             <option>Corrugated Boxes</option>
@@ -98,19 +122,35 @@ export default function CustomBoxForm() {
           </select>
         </div>
 
+        {/* Additional Info */}
+        <label htmlFor="additional_info" className="block text-sm font-medium text-gray-800">
+          Additional Info:
+        </label>
         <textarea
+          id="additional_info"
           name="additional_info"
           rows={4}
           placeholder="Additional Info"
           className="w-full border p-3 rounded text-gray-800"
         />
 
+        {/* Contact Info */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-gray-800">
-          <input type="text" name="name" placeholder="Name*" required className="w-full border p-2 rounded" />
-          <input type="email" name="email" placeholder="Email*" required className="w-full border p-2 rounded" />
-          <input type="tel" name="phone" placeholder="Phone" className="w-full border p-2 rounded" />
+          <div>
+            <label htmlFor="name" className="sr-only">Name</label>
+            <input id="name" type="text" name="name" placeholder="Name*" required className="w-full border p-2 rounded" />
+          </div>
+          <div>
+            <label htmlFor="email" className="sr-only">Email</label>
+            <input id="email" type="email" name="email" placeholder="Email*" required className="w-full border p-2 rounded" />
+          </div>
+          <div>
+            <label htmlFor="phone" className="sr-only">Phone</label>
+            <input id="phone" type="tel" name="phone" placeholder="Phone" className="w-full border p-2 rounded" />
+          </div>
         </div>
 
+        {/* File Upload */}
         <div>
           <label htmlFor="file" className="block text-sm font-medium text-gray-800">
             Attach Design or Reference File (optional)

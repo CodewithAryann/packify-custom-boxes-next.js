@@ -66,8 +66,9 @@ export default function Testimonials() {
     <section className="bg-white py-10">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-          Loved by <span className="text-orange-500">Businesses Worldwide</span>
-        </h2>
+  Loved by <span className="text-orange-500">Businesses Worldwide</span>
+</h2>
+
         <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
           Our customers trust PackifyCustomBoxes to deliver premium, eco-friendly packaging solutions that elevate their brands.
         </p>
@@ -87,7 +88,7 @@ export default function Testimonials() {
                     />
                   </div>
                   <p className="text-gray-600 italic mb-4">"{testimonial.quote}"</p>
-                  <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
+                  <h3 className="font-semibold text-gray-800">{testimonial.name}</h3>
                   <span className="text-sm text-gray-500">{testimonial.role}</span>
                 </div>
               </div>
