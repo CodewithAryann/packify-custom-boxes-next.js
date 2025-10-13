@@ -7,9 +7,9 @@ const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '#about' },
   { name: 'Types of Boxes', href: '#boxes' },
-  { name: 'Why Choose Us', href: '#choose' },
+  // { name: 'Why Choose Us', href: '#choose' },
   { name: 'How it Works', href: '#it-works' },
-  { name: 'FAQ', href: '#faqs' },
+  // { name: 'FAQ', href: '#faqs' },
   { name: 'Request a Quote', href: '#quote' },
 ]
 

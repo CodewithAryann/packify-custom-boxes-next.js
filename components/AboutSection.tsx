@@ -40,7 +40,10 @@ export default function AboutSection() {
                 Fast U.S. shipping and worldwide delivery
               </li>
             </ul>
+            <div className="mt-4 flex flex-nowrap items-center gap-4 overflow-x-auto text-sm text-gray-700"><span className="font-medium">Global Operations:</span>{['us','cn','sa','gb','ae'].map(code=><Image key={code} src={`https://flagcdn.com/${code}.svg`} alt={code} width={24} height={24} className="rounded-sm border border-gray-300"/>) }<span className="font-medium ml-6">Logistics Partners:</span><Image src="/images/images-removebg-preview.png" alt="USPS" width={50} height={20}/><Image src="/images/DHL-Symbol.png" alt="DHL" width={50} height={20}/><Image src="https://upload.wikimedia.org/wikipedia/commons/9/9d/FedEx_Express.svg" alt="FedEx" width={50} height={20}/></div>
+
           </div>
+          
 
           <div className="relative w-full h-[18rem] md:h-[26rem] group overflow-hidden rounded-[10px] shadow-lg">
             <Image

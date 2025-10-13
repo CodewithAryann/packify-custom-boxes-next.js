@@ -33,7 +33,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta charSet="UTF-8" />
         <link rel="icon" href="/images/Favicon.webp" />
+        <link rel="canonical" href="https://packifycustomboxes.com/" />
         <link
           rel="preload"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -51,7 +53,7 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <Footer />
         <WhatsAppButton />
-        <ClubPopup />
+        {/* <ClubPopup /> */}
         
         {/* Tawk.to Chat Widget */}
         <Script id="tawk-to" strategy="lazyOnload">

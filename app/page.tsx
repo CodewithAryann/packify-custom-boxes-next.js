@@ -16,19 +16,19 @@ import PromoBanner from '@/components/PromoBanner'
 export default function Home() {
   return (
     <>
-      <Hero />
-      <AboutSection />
+      <Hero />      
       <TrustedBy />
       <ProductGrid />
+      <AboutSection />
       <FeaturesHighlight />
       <CustomBoxForm />
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       <HowItWorks />
-      <WhyCustomBoxes />
+      {/* <WhyCustomBoxes /> */}
       <FAQSection />
-      <BlogPreview />
       <QuoteForm />
-      <Testimonials />
+      {/* <Testimonials /> */}
+      <BlogPreview />
       <PromoBanner/>      
     </>
   )
