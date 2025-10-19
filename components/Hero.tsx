@@ -23,6 +23,7 @@ export default function Hero() {
           </p>
           <Link
             href="#type"
+            aria-label="Start your custom box"
             className="mt-4 inline-block px-6 py-3 bg-white text-orange-500 font-semibold rounded-lg shadow-md hover:bg-orange-100 transition"
           >
             Start Your Custom Box
@@ -33,12 +34,12 @@ export default function Hero() {
         <div className="relative w-full h-full flex items-center justify-center px-6 py-10 hidden md:flex">
           <video
             src="/videos/1754748684485.mp4"
-            poster="/images/packify-customboxes.mp4"
+            poster="/images/hero-200.webp"
             autoPlay
             loop
             muted
             playsInline
-            preload="auto"
+            preload="metadata"
             className="rounded-xl shadow-lg w-full max-w-[450px] h-[360px] object-cover"
           />
         </div>
