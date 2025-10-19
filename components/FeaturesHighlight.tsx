@@ -54,7 +54,7 @@ export default function WhyChoosePackify() {
               <div className="bg-orange-100 p-4 rounded-full mb-4">
                 <Image src={item.icon} alt={item.title} width={50} height={50} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+              <p className="text-xl font-semibold text-gray-800 mb-2">{item.title}</p>
               <p className="text-gray-600 text-sm">{item.desc}</p>
             </div>
           ))}
@@ -68,6 +68,7 @@ export default function WhyChoosePackify() {
           </p>
           <Link
             href="/get-quote"
+            aria-label="Request a free quote"
             className="inline-block bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold text-lg py-4 px-10 rounded-full shadow-lg transition-all duration-300"
           >
             Get a Free Quote

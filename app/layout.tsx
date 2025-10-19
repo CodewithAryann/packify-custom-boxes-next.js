@@ -35,9 +35,7 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon-white.png" />
         <link rel="icon" href="/images/Favicon.webp" />
         <link rel="canonical" href="https://packifycustomboxes.com/" />
         <link

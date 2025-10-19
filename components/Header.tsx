@@ -58,14 +58,14 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-md text-white shadow-md transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between lg:px-[64px] lg:py-[18px]">
-
         {/* Logo */}
-        <h1
+        <div
           className="text-xl sm:text-2xl font-bold cursor-pointer select-none"
           onClick={() => handleNavClick('/')}
+          aria-label="Go to homepage"
         >
           Packify<span className="text-orange-500">CustomBoxes</span>
-        </h1>
+        </div>
 
         {/* Hamburger Button */}
         <button

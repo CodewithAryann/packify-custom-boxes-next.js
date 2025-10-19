@@ -18,6 +18,9 @@ export default function Hero() {
             Premium custom boxes designed to elevate your brand. Fully printed. Fast turnaround. Eco-conscious. Made to
             impress inside and out.
           </p>
+          <p className="text-sm sm:text-base opacity-90">
+            Your Packaging. Your Story. Crafted to fit your brand.
+          </p>
           <p className="text-lg font-bold">
             Free U.S. Shipping. No Minimums. Delivered Worldwide.
           </p>

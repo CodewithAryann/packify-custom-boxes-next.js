@@ -106,7 +106,7 @@ export default function ProductGrid() {
                 />
               </div>
               <div className="p-5 text-left">
-                <h3 className="text-xl text-black font-semibold mb-2">{product.name}</h3>
+                <p className="text-xl text-black font-semibold mb-2">{product.name}</p>
                 <p className="text-gray-600 text-sm mb-4">{product.description}</p>
               </div>
             </Link>
