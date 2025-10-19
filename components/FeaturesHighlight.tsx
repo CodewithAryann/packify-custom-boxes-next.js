@@ -68,10 +68,10 @@ export default function WhyChoosePackify() {
           </p>
           <Link
             href="/get-quote"
-            aria-label="Request a free quote"
+            aria-label="Request a quote for custom boxes"
             className="inline-block bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold text-lg py-4 px-10 rounded-full shadow-lg transition-all duration-300"
           >
-            Get a Free Quote
+            Request a Quote
           </Link>
         </div>
       </div>

@@ -62,6 +62,7 @@ export default function Header() {
         <div
           className="text-xl sm:text-2xl font-bold cursor-pointer select-none"
           onClick={() => handleNavClick('/')}
+          role="link"
           aria-label="Go to homepage"
         >
           Packify<span className="text-orange-500">CustomBoxes</span>

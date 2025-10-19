@@ -51,8 +51,12 @@ export default function BlogPreview() {
             <div className="p-4">
               <h3 className="text-lg font-semibold mb-2 text-gray-700">{post.title}</h3>
               <p className="text-gray-600 text-sm mb-3">{post.description}</p>
-              <Link href={post.link} className="text-orange-600 hover:underline text-sm font-medium">
-                Read More →
+              <Link
+                href={post.link}
+                aria-label={`Read article: ${post.title}`}
+                className="text-orange-600 hover:underline text-sm font-medium"
+              >
+                Read →
               </Link>
             </div>
           </div>
