@@ -151,7 +151,7 @@ function CustomBubbleMailersFullWidth() {
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-4xl font-extrabold text-orange-600">Premium Protective Packaging</h2>
           <p className="text-gray-700 text-lg">
-            Custom Bubble Mailers for Secure & Professional Shipping. Shock-absorbing, puncture-resistant, and fully customizable to protect fragile and premium products.
+            Custom Boxes for Secure & Professional Shipping. Shock-absorbing, puncture-resistant, and fully customizable to protect fragile and premium products.
           </p>
         </div>
 
