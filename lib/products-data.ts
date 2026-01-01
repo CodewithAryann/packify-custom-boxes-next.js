@@ -1,11 +1,18 @@
 // lib/products-data.ts
 export interface ProductVariant {
+  sizes?: any
+  finishes?: any
+  printing?: any
+  materials?: any
+  slug?: string | null | undefined
   name: string
   image: string
   description?: string
 }
 
 export interface Product {
+  faqs: boolean
+  customization: any
   title: string
   slug: string
   metaDescription: string
@@ -23,6 +30,8 @@ export interface Product {
 
 export const productsData: Record<string, Product> = {
   'tuck-boxes': {
+    customization: {},
+    faqs: false,
     title: 'Tuck Boxes',
     slug: 'tuck-boxes',
     metaDescription: 'Get premium custom tuck boxes from PackifyCustomBoxes. Perfect for retail, product packaging, and gifts. Fully customizable, eco-friendly, and high-quality. Free US shipping and worldwide delivery.',
@@ -63,20 +72,31 @@ These boxes are designed to give you a competitive advantage in the market. Plus
       {
         name: "Tuck Top Boxes",
         image: "/images/Tuck Top Box.webp",
-        description:
-          "Tuck top boxes feature a simple folding design with a top flap that tucks securely into the front of the box. They’re easy to assemble and popular for retail packaging, offering a neat, streamlined appearance that’s ideal for a wide variety of products.",
+        description: "Tuck top boxes feature a simple folding design with a top flap that tucks securely into the front of the box. They’re easy to assemble and popular for retail packaging, offering a neat, streamlined appearance that’s ideal for a wide variety of products.",
+        sizes: undefined,
+        finishes: undefined,
+        printing: undefined,
+        materials: undefined
       },
       {
         name: "Auto Lock Boxes",
         image: "/images/Auto Lock Bottom Box.webp",
-        description:
-          "Auto lock boxes are designed for effortless assembly, with a pre-glued bottom that pops into place automatically. This style offers unbeatable convenience and sturdy support, making them a favorite for products needing quick, secure packaging, especially in fast-paced e-commerce and retail settings.",
+        description: "Auto lock boxes are designed for effortless assembly, with a pre-glued bottom that pops into place automatically. This style offers unbeatable convenience and sturdy support, making them a favorite for products needing quick, secure packaging, especially in fast-paced e-commerce and retail settings.",
+        slug: undefined,
+        sizes: undefined,
+        finishes: undefined,
+        printing: undefined,
+        materials: undefined
       },
       {
         name: "Tuck Mailer Boxes",
         image: "/images/Tuck Mailer Box.webp",
-        description:
-          "Tuck mailer boxes blend sturdy construction with easy assembly. Their tuck-in flaps lock contents in place, providing reliable protection during shipping. This style is perfect for subscription shipments and promotional kits.",
+        description: "Tuck mailer boxes blend sturdy construction with easy assembly. Their tuck-in flaps lock contents in place, providing reliable protection during shipping. This style is perfect for subscription shipments and promotional kits.",
+        slug: undefined,
+        sizes: undefined,
+        finishes: undefined,
+        printing: undefined,
+        materials: undefined
       },
       {
         name: "Straight Tuck End Boxes",
@@ -130,6 +150,8 @@ These boxes are designed to give you a competitive advantage in the market. Plus
   },
 
   'dispenser-boxes': {
+    customization: {},
+    faqs: false,
     title: 'Dispenser Boxes',
     slug: 'dispenser-boxes',
     metaDescription: 'Order premium custom dispenser boxes from PackifyCustomBoxes. Perfect for retail products, cosmetics, and small items. Fully customizable, durable, and eco-friendly. Free US shipping and worldwide delivery.',
@@ -164,6 +186,8 @@ You can design this box in any size, shape, and style at wholesale prices as per
   },
 
   'mailer-boxes': {
+    customization: {},
+    faqs: false,
     title: 'Mailer Boxes',
     slug: 'mailer-boxes',
     metaDescription: 'Premium custom mailer boxes for e-commerce and subscription products. Designed for durability and brand impact. Free US shipping and worldwide delivery.',
@@ -343,6 +367,8 @@ You can design this box in any size, shape, and style at wholesale prices as per
   },
 
   'rigid-boxes': {
+    customization: {},
+    faqs: false,
     title: 'Rigid Boxes',
     slug: 'rigid-boxes',
     metaDescription: 'Premium rigid boxes ideal for luxury products. High-end finish and solid structure for exceptional unboxing experience.',
@@ -431,6 +457,8 @@ You can design this box in any size, shape, and style at wholesale prices as per
   },
 
   'cigarette-boxes': {
+    customization: {},
+    faqs: false,
     title: 'Cigarette Boxes',
     slug: 'cigarette-boxes',
     metaDescription: 'Stylish and protective cigarette boxes with customizable finishes and secure closures.',
@@ -523,6 +551,8 @@ You can design this box in any size, shape, and style at wholesale prices as per
   },
 
   'burger-boxes': {
+    customization: {},
+    faqs: false,
     title: 'Burger Boxes',
     slug: 'burger-boxes',
     metaDescription: 'Custom burger boxes for dine-in, takeout, or delivery. Durable, insulated, with custom branding options.',
@@ -548,6 +578,8 @@ You can design this box in any size, shape, and style at wholesale prices as per
   },
 
   'magnetic-closure': {
+    customization: {},
+    faqs: false,
     title: 'Magnetic Closure Boxes',
     slug: 'magnetic-closure',
     metaDescription: 'Premium magnetic closure boxes for luxury products and gifts. Elegant design with secure magnetic flap.',
@@ -572,6 +604,8 @@ You can design this box in any size, shape, and style at wholesale prices as per
   },
 
   'cosmetic-boxes': {
+    customization: {},
+    faqs: false,
     title: 'Cosmetic Boxes',
     slug: 'cosmetic-boxes',
     metaDescription: 'Custom cosmetic boxes for skincare and beauty products. Sleek, durable, and fully customizable.',
