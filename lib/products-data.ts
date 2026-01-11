@@ -1,3 +1,5 @@
+import { features, title } from "process"
+
 // lib/products-data.ts
 export interface ProductVariant {
   sizes?: any
@@ -9,8 +11,38 @@ export interface ProductVariant {
   image: string
   description?: string
 }
+export interface FAQ {
+  question: string
+  answer: string
+}
+
+export interface LearnMoreSection {
+  title?: string
+  subtitle?: string
+  features?: {
+    title: string
+    description: string
+  }[]
+  sections?: {
+    heading: string
+    content: string[]
+  }[]
+  materials?: {
+    label: string
+    value: string
+  }[]
+  highlights?: string[]
+  faqs?: FAQ[]
+  cta?: {
+    title?: string
+    subtitle?: string
+  }
+}
+
 
 export interface Product {
+  learnMoreSection: any
+  capabilitiesSection: any
   faqs: boolean
   customization: any
   title: string
@@ -28,11 +60,111 @@ export interface Product {
   variants?: ProductVariant[]
 }
 
-export const productsData: Record<string, Product> = {
+export const productsData = {
   'tuck-boxes': {
-    customization: {},
-    faqs: false,
-    title: 'Tuck Boxes',
+    learnMoreSection: {
+    title: 'Learn More About Tuck Boxes',
+    subtitle: 'Versatile, Secure & Professional Packaging For Every Product',
+    
+    features: [
+      {
+        title: 'Secure Closure',
+        description: 'Tuck-in flaps provide reliable closure without adhesives, keeping products safe during storage and transit.'
+      },
+      {
+        title: 'Easy Assembly',
+        description: 'Quick-fold design saves time and labor costs, perfect for high-volume packaging operations.'
+      },
+      {
+        title: 'Premium Branding',
+        description: 'Full-color printing and custom finishes transform boxes into powerful marketing tools on retail shelves.'
+      }
+    ],
+    
+    sections: [
+      {
+        heading: 'Why Choose Tuck Boxes?',
+        content: [
+          'Tuck boxes offer the perfect balance of functionality, aesthetics, and cost-effectiveness.',
+          'Their versatile design makes them suitable for industries ranging from cosmetics to electronics.',
+          'Easy assembly reduces packaging time while maintaining professional presentation.',
+          'Custom printing options help your brand stand out in competitive markets.'
+        ]
+      },
+      {
+        heading: 'Material & Construction Excellence',
+        content: [
+          'Premium cardboard and paperboard ensure durability without adding excessive weight.',
+          'Eco-friendly kraft options available for sustainable packaging solutions.',
+          'Multiple thickness options from lightweight to heavy-duty applications.',
+          'Food-safe materials available for edible products and consumables.'
+        ]
+      },
+      {
+        heading: 'Customization Options',
+        content: [
+          'Available in any custom size to perfectly fit your products.',
+          'Multiple style variations: tuck-end, tuck-top, auto-lock, and straight tuck end.',
+          'Full-color CMYK printing with Pantone color matching for precise branding.',
+          'Premium finishes including matte, gloss, soft-touch, spot UV, and embossing.'
+        ]
+      }
+    ],
+    
+    materials: [
+      { label: 'Material Options', value: 'Cardboard, Kraft, Rigid Paperboard, Corrugated' },
+      { label: 'Printing', value: 'Full-color CMYK, Pantone matching, Digital & Offset printing' },
+      { label: 'Finishes', value: 'Matte, Gloss, Soft-touch, Spot UV, Embossing, Foil stamping' }
+    ],
+    
+    highlights: [
+      'Quick and easy assembly',
+      'Cost-effective packaging solution',
+      'Fully customizable sizes and designs',
+      'Eco-friendly material options'
+    ],
+    
+    faqs: [
+      { 
+        question: 'What products are tuck boxes best for?', 
+        answer: 'Tuck boxes are versatile and work well for cosmetics, jewelry, small electronics, food items, pharmaceuticals, and retail products of all kinds. Their secure closure makes them ideal for packaging items that need protection during shipping and display.' 
+      },
+      { 
+        question: 'Can I get custom sizes?', 
+        answer: 'Absolutely! We create tuck boxes in any size to perfectly fit your products, ensuring secure packaging and professional presentation. Our team will help you determine the ideal dimensions for your specific needs.' 
+      },
+      { 
+        question: 'What printing options are available?', 
+        answer: 'We offer full-color CMYK printing, Pantone color matching, and various finishes including matte, gloss, spot UV, embossing, debossing, and foil stamping in gold, silver, or custom metallic colors.' 
+      },
+      { 
+        question: 'Are tuck boxes eco-friendly?', 
+        answer: 'Yes! We offer recyclable and biodegradable materials including kraft paper and eco-friendly inks for sustainable packaging solutions. All materials meet environmental standards while maintaining quality and durability.' 
+      }
+    ],
+    
+    cta: {
+      title: 'Get Custom Tuck Boxes That Elevate Your Brand!',
+      subtitle: 'Professional packaging with quick turnaround, low minimums, and competitive pricing. Transform your products with premium tuck boxes today!'
+    }
+  },
+  
+capabilitiesSection: {
+  title: 'Our Capabilities',
+  items: [
+    { label: 'Low MOQ', value: 'Start from 100 units' },
+    { label: 'Fast Turnaround', value: '7-10 business days' },
+    { label: 'Free Shipping', value: 'Across the USA' },
+    { label: 'Custom Sizing', value: 'Any dimension' },
+    { label: 'Full-Color Printing', value: 'CMYK & Pantone' },
+    { label: '24/7 Support', value: 'Expert assistance' },
+    { label: 'Free Samples', value: 'Before bulk orders' },
+    { label: 'Eco-Friendly Options', value: 'Sustainable materials' }
+  ]
+},
+customization: {},
+faqs: false,
+title: 'Tuck Boxes',
     slug: 'tuck-boxes',
     metaDescription: 'Get premium custom tuck boxes from PackifyCustomBoxes. Perfect for retail, product packaging, and gifts. Fully customizable, eco-friendly, and high-quality. Free US shipping and worldwide delivery.',
     keywords: [
@@ -147,12 +279,112 @@ These boxes are designed to give you a competitive advantage in the market. Plus
           "1-2-3 bottom boxes are engineered for easy assembly, as the base snaps together in three simple steps. Their secure foundation supports heavier items and ensures the package won’t pop open, making them a dependable choice for substantial or bulky products.",
       },
     ],
-  },
+},
 
-  'dispenser-boxes': {
-    customization: {},
-    faqs: false,
-    title: 'Dispenser Boxes',
+'dispenser-boxes': {
+  learnMoreSection: {
+    title: 'Learn More About Dispenser Boxes',
+    subtitle: 'Convenient Access Meets Eye-Catching Display For Maximum Sales',
+    
+    features: [
+      {
+        title: 'Easy Dispensing',
+        description: 'Perforated openings and flip-out designs allow customers to grab products quickly and conveniently.'
+      },
+      {
+        title: 'Retail-Ready Display',
+        description: 'Stand-up design maximizes shelf space and product visibility in retail environments.'
+      },
+      {
+        title: 'Product Protection',
+        description: 'Sturdy construction keeps products secure while allowing easy access for customers.'
+      }
+    ],
+    
+    sections: [
+      {
+        heading: 'Perfect for High-Traffic Retail Environments',
+        content: [
+          'Dispenser boxes are ideal for candy, snacks, hygiene products, and small retail items.',
+          'Flip-out perforated openings provide controlled access while keeping products organized.',
+          'Custom graphics and branding turn your dispenser into a point-of-sale marketing tool.',
+          'Space-efficient design maximizes product display in limited retail space.'
+        ]
+      },
+      {
+        heading: 'Customization That Drives Sales',
+        content: [
+          'Choose from various dispensing mechanisms: tear strips, flip-outs, or push-through designs.',
+          'Full-color printing with vibrant graphics attracts customer attention at point-of-sale.',
+          'Custom sizes to accommodate different product quantities and dimensions.',
+          'Window cutouts available to showcase products inside and increase purchase intent.'
+        ]
+      },
+      {
+        heading: 'Durable Construction & Materials',
+        content: [
+          'Sturdy cardboard or corrugated materials withstand frequent use in retail settings.',
+          'Grease-resistant and moisture-resistant options for food products.',
+          'Eco-friendly kraft and recyclable materials available.',
+          'Food-safe coatings for edible items and confectionery products.'
+        ]
+      }
+    ],
+    
+    materials: [
+      { label: 'Materials', value: 'Cardboard, Corrugated, Kraft, SBS (Solid Bleached Sulfate)' },
+      { label: 'Dispensing Type', value: 'Perforated tear-out, Flip-top, Push-through' },
+      { label: 'Printing', value: 'Full CMYK, Custom Pantone colors, High-resolution graphics' }
+    ],
+    
+    highlights: [
+      'Convenient product access',
+      'Maximizes retail shelf space',
+      'Customizable dispensing mechanisms',
+      'Strong brand visibility'
+    ],
+    
+    faqs: [
+      { 
+        question: 'What products work best in dispenser boxes?', 
+        answer: 'Dispenser boxes are perfect for candy, gum, snacks, hygiene products, small toys, sachets, protein bars, and any small retail items that benefit from grab-and-go convenience in stores.' 
+      },
+      { 
+        question: 'Can I customize the dispensing mechanism?', 
+        answer: 'Yes! We offer various options including perforated tear-outs, flip-top openings, and push-through designs tailored to your product needs and customer preferences.' 
+      },
+      { 
+        question: 'How durable are dispenser boxes?', 
+        answer: 'Our dispenser boxes use sturdy cardboard or corrugated materials that withstand frequent use while maintaining structural integrity throughout the product lifecycle.' 
+      },
+      { 
+        question: 'Can dispenser boxes be branded?', 
+        answer: 'Absolutely! Full-color printing and custom graphics turn your dispenser box into a powerful marketing tool that attracts customers and reinforces brand identity at point-of-sale.' 
+      }
+    ],
+    
+    cta: {
+      title: 'Create Eye-Catching Dispenser Boxes Today!',
+      subtitle: 'Boost sales with convenient, retail-ready packaging. Custom designs, fast delivery, and competitive pricing guaranteed!'
+    }
+  },
+  
+  capabilitiesSection: {
+    title: 'Our Capabilities',
+    items: [
+      { label: 'Custom Sizing', value: 'Any dimension' },
+      { label: 'Fast Turnaround', value: '7-12 business days' },
+      { label: 'Free Shipping', value: 'USA-wide delivery' },
+      { label: 'Full-Color Printing', value: 'Vibrant graphics' },
+      { label: 'Low MOQ', value: 'From 100 units' },
+      { label: 'Free Samples', value: 'Quality assurance' },
+      { label: 'Expert Team', value: 'Design assistance' },
+      { label: 'Quality Assurance', value: '100% satisfaction' }
+    ]
+  },
+  customization: {},
+  faqs: false,
+  title: 'Dispenser Boxes',
     slug: 'dispenser-boxes',
     metaDescription: 'Order premium custom dispenser boxes from PackifyCustomBoxes. Perfect for retail products, cosmetics, and small items. Fully customizable, durable, and eco-friendly. Free US shipping and worldwide delivery.',
     keywords: [
@@ -186,7 +418,156 @@ You can design this box in any size, shape, and style at wholesale prices as per
   },
 
   'mailer-boxes': {
-    customization: {},
+    learnMoreSection: {
+    title: 'Learn More About Custom Mailer Boxes',
+    subtitle: 'Durable, Stylish & Brand-Driven Packaging For Modern Shipping',
+    
+    features: [
+      {
+        title: 'Secure Self-Lock Design',
+        description:
+          'Built-in locking flaps provide strong protection without the need for tape or glue.'
+      },
+      {
+        title: 'Premium Unboxing Experience',
+        description:
+          'Custom printed interiors and exteriors create memorable unboxing moments that build brand loyalty.'
+      },
+      {
+        title: 'Shipping Optimized',
+        description:
+          'Designed to withstand rough handling during transit while keeping products safe and presentable.'
+      }
+    ],
+
+    sections: [
+      {
+        heading: 'Why Choose Custom Mailer Boxes?',
+        content: [
+          'Mailer boxes are one of the most popular packaging choices for eCommerce and subscription brands.',
+          'Their rigid structure provides superior protection compared to traditional folding cartons.',
+          'Easy assembly saves packing time and reduces operational costs.',
+          'Perfect for both shipping and retail presentation with a premium look and feel.'
+        ]
+      },
+      {
+        heading: 'Strong Materials & Smart Construction',
+        content: [
+          'Crafted from corrugated cardboard and premium paperboard for maximum durability.',
+          'Available in kraft and white finishes for natural or high-end branding.',
+          'Engineered to handle stacking, drops, and shipping pressure.',
+          'Eco-friendly and recyclable options available for sustainable brands.'
+        ]
+      },
+      {
+        heading: 'Complete Customization Options',
+        content: [
+          'Custom sizes to fit your products perfectly with no wasted space.',
+          'Full-color CMYK and Pantone printing for precise brand colors.',
+          'Interior and exterior printing for impactful unboxing experiences.',
+          'Premium finishes including matte, gloss, soft-touch, and spot UV.'
+        ]
+      }
+    ],
+
+    
+   materials: [
+      { label: 'Material Options', value: 'Corrugated cardboard, Kraft, Premium paperboard' },
+      { label: 'Printing', value: 'CMYK, Pantone, Digital & Offset printing' },
+      { label: 'Finishes', value: 'Matte, Gloss, Soft-touch, Spot UV, Foil stamping' }
+    ],
+    
+    highlights: [
+      'Strong & protective structure',
+      'Ideal for eCommerce & subscription boxes',
+      'Custom inside & outside printing',
+      'Eco-friendly and recyclable materials'
+    ],
+    
+    faqs: [
+      {
+        question: 'What products are best for mailer boxes?',
+        answer:
+          'Mailer boxes are ideal for clothing, cosmetics, electronics, subscription boxes, promotional kits, and eCommerce products that require secure shipping and premium presentation.'
+      },
+      {
+        question: 'Can mailer boxes be custom printed inside and out?',
+        answer:
+          'Yes! We offer full customization including interior printing to create a memorable unboxing experience that strengthens brand recognition.'
+      },
+      {
+        question: 'Are mailer boxes suitable for shipping?',
+        answer:
+          'Absolutely. Mailer boxes are designed to withstand shipping conditions and provide excellent protection without additional outer packaging.'
+      },
+      {
+        question: 'Do you offer eco-friendly mailer boxes?',
+        answer:
+          'Yes. We provide recyclable and biodegradable materials, including kraft options, to support sustainable packaging initiatives.'
+      }
+    ],
+
+    cta: {
+      title: 'Create Custom Mailer Boxes That Stand Out!',
+      subtitle:
+        'Protect your products, impress your customers, and grow your brand with premium custom mailer boxes.'
+    }
+  },
+  
+capabilitiesSection: {
+    title: 'Our Capabilities',
+    items: [
+      { label: 'Low MOQ', value: 'Starting from 100 units' },
+      { label: 'Fast Turnaround', value: '7–10 business days' },
+      { label: 'Free Shipping', value: 'Across the USA' },
+      { label: 'Custom Sizing', value: 'Any dimension' },
+      { label: 'Full-Color Printing', value: 'CMYK & Pantone' },
+      { label: 'Eco Materials', value: 'Recyclable options' },
+      { label: 'Expert Support', value: 'Packaging specialists' },
+      { label: 'Free Samples', value: 'Before bulk production' }
+    ]
+  },
+
+customization: {
+  title: 'Customization Options',
+  description:
+    'We offer complete flexibility to customize your packaging according to your product requirements, brand identity, and budget.',
+  options: [
+    {
+      title: 'Size & Structure',
+      points: [
+        'Custom dimensions to perfectly fit your product',
+        'Multiple thickness and material options',
+        'Lightweight yet durable construction',
+      ],
+    },
+    {
+      title: 'Printing & Finishes',
+      points: [
+        'Full-color CMYK or Pantone printing',
+        'Matte, gloss, soft-touch & luxury finishes',
+        'Embossing, debossing & foil stamping',
+      ],
+    },
+    {
+      title: 'Material Choices',
+      points: [
+        'Kraft, cardboard, corrugated & poly materials',
+        'Eco-friendly & recyclable options',
+        'Protective inner linings when required',
+      ],
+    },
+    {
+      title: 'Security & Functionality',
+      points: [
+        'Tamper-proof seals & strong adhesive closures',
+        'Thermal insulation options',
+        'Moisture & puncture resistance',
+      ],
+    },
+  ],
+},
+
     faqs: false,
     title: 'Mailer Boxes',
     slug: 'mailer-boxes',
@@ -364,34 +745,135 @@ You can design this box in any size, shape, and style at wholesale prices as per
           "Tab lock designs help securely close the box without tape or glue, ensuring tamper resistance and neat presentation—ideal for retail packaging.",
       },
     ],
-  },
+},
 
-  'rigid-boxes': {
-    customization: {},
-    faqs: false,
-    title: 'Rigid Boxes',
-    slug: 'rigid-boxes',
-    metaDescription: 'Premium rigid boxes ideal for luxury products. High-end finish and solid structure for exceptional unboxing experience.',
-    keywords: [
-      'custom rigid boxes',
-      'luxury packaging',
-      'premium boxes',
-      'gift boxes',
-      'high-end packaging'
-    ],
-    mainImage: '/images/WhatsApp_Image_2025-08-05_at_3.57.58_AM-removebg-preview.webp',
-    hoverImage: '/images/WhatsApp_Image_2025-08-05_at_3.57.58_AM__1_-removebg-preview.webp',
-    description: 'Premium, sturdy packaging solutions ideal for luxury products. With a high-end finish and solid structure, they deliver an exceptional unboxing experience and strong brand presence.',
+'rigid-boxes': {
+  learnMoreSection: {
+    title: 'Learn More About Rigid Boxes',
+    subtitle: 'Luxury Packaging That Commands Attention & Delivers Premium Unboxing Experiences',
+    
     features: [
-      'Fast Turnaround',
-      'Full Color Printing',
-      'Design Support',
-      'Free Shipping'
+      {
+        title: 'Premium Structure',
+        description: 'Thick, solid construction maintains shape and provides superior protection for luxury products.'
+      },
+      {
+        title: 'Elegant Finishes',
+        description: 'Soft-touch lamination, foil stamping, and embossing create unforgettable first impressions.'
+      },
+      {
+        title: 'Reusable Design',
+        description: 'High-quality materials ensure boxes can be kept and reused, extending brand visibility.'
+      }
     ],
-    overviewTitle: 'Product Overview Of Custom Rigid Boxes',
-    overviewContent: 'Custom Rigid Boxes are an exceptional packaging solution for high-end luxury products. These boxes feature a durable, solid structure that maintains its shape even through rough handling conditions. To maintain the aesthetic appeal, these boxes are pasted with printed or textured cardstock materials. The solid structure matched with their luxurious appeal makes rigid setup boxes the go-to choice for many different products and industries. Whether cosmetics, jewelry, electronics, or apparel, these boxes are the perfect packaging solution for your needs. If you are looking for something that can set your product apart from the competition, look no further than rigid boxes.',
-    overviewImage: '/images/rigid-end.webp',
-    overviewHoverImage: '/images/rigid-end-1.webp',
+    
+    sections: [
+      {
+        heading: 'Why Luxury Brands Choose Rigid Boxes',
+        content: [
+          'Rigid boxes convey premium quality and elevate perceived product value instantly.',
+          'Durable construction protects high-end products like jewelry, cosmetics, and electronics.',
+          'Magnetic closures, ribbon pulls, and custom inserts create memorable unboxing experiences.',
+          'Reusable design extends brand exposure as customers keep boxes for storage and display.'
+        ]
+      },
+      {
+        heading: 'Premium Customization Options',
+        content: [
+          'Soft-touch, linen, leather, or textured finishes for tactile luxury experience.',
+          'Foil stamping in gold, silver, rose gold, or custom metallic colors.',
+          'Embossing and debossing for dimensional branding elements.',
+          'Satin, velvet, or foam interior linings for added elegance and product protection.'
+        ]
+      },
+      {
+        heading: 'Perfect for High-End Products',
+        content: [
+          'Ideal for jewelry, watches, premium cosmetics, and luxury electronics.',
+          'Custom inserts and compartments hold products securely in place.',
+          'Magnetic closures or ribbon pulls add functional elegance.',
+          'Available in any size from small jewelry boxes to large gift sets.'
+        ]
+      }
+    ],
+    
+    materials: [
+      { label: 'Base Material', value: 'High-density chipboard (1200-1800 GSM), Rigid cardboard' },
+      { label: 'Wrapping Options', value: 'Art paper, Textured paper, Fabric, Leather' },
+      { label: 'Interior', value: 'Satin, Velvet, Foam inserts, Custom-molded trays' },
+      { label: 'Finishes', value: 'Soft-touch, Foil stamping, Embossing, Spot UV' }
+    ],
+    
+    highlights: [
+      'Premium, luxury presentation',
+      'Durable & reusable',
+      'Fully customizable finishes',
+      'Perfect for high-end products'
+    ],
+    
+    faqs: [
+      { 
+        question: 'What makes rigid boxes different from regular boxes?', 
+        answer: 'Rigid boxes use thick, high-density chipboard (1200-1800 GSM) that maintains its shape permanently, unlike folding cartons. They offer superior protection and luxury presentation that elevates perceived product value.' 
+      },
+      { 
+        question: 'What products are rigid boxes best for?', 
+        answer: 'Rigid boxes are ideal for jewelry, watches, high-end cosmetics, electronics, luxury gifts, premium apparel, and any product requiring elegant presentation and superior protection.' 
+      },
+      { 
+        question: 'Can I add custom inserts?', 
+        answer: 'Yes! We offer foam inserts, velvet trays, custom-molded compartments, ribbon pulls, and magnetic closures to securely hold and showcase your products with elegance.' 
+      },
+      { 
+        question: 'What finishes are available?', 
+        answer: 'We offer soft-touch lamination, foil stamping (gold, silver, rose gold), embossing, debossing, spot UV, and textured wrapping materials including linen, leather, and fabric finishes.' 
+      }
+    ],
+    
+    cta: {
+      title: 'Elevate Your Brand with Luxury Rigid Boxes!',
+      subtitle: 'Premium packaging that makes lasting impressions. Custom designs, expert craftsmanship, and superior quality delivered to your door.'
+    }
+  },
+  
+  capabilitiesSection: {
+    title: 'Our Capabilities',
+    items: [
+      { label: 'Premium Materials', value: 'Luxury finishes' },
+      { label: 'Custom Sizing', value: 'Perfect fit' },
+      { label: 'Expert Team', value: 'Design support' },
+      { label: 'Quality Assurance', value: 'Premium standards' },
+      { label: 'Free Samples', value: 'Before ordering' },
+      { label: 'Fast Turnaround', value: '10-15 business days' },
+      { label: 'Low MOQ', value: 'From 100 units' },
+      { label: 'Free Shipping', value: 'USA delivery' }
+    ]
+  },
+  customization: {},
+  faqs: false,
+  title: 'Rigid Boxes',
+  slug: 'rigid-boxes',
+  metaDescription: 'Premium rigid boxes ideal for luxury products. High-end finish and solid structure for exceptional unboxing experience.',
+  keywords: [
+    'custom rigid boxes',
+    'luxury packaging',
+    'premium boxes',
+    'gift boxes',
+    'high-end packaging'
+  ],
+  mainImage: '/images/WhatsApp_Image_2025-08-05_at_3.57.58_AM-removebg-preview.webp',
+  hoverImage: '/images/WhatsApp_Image_2025-08-05_at_3.57.58_AM__1_-removebg-preview.webp',
+  description: 'Premium, sturdy packaging solutions ideal for luxury products. With a high-end finish and solid structure, they deliver an exceptional unboxing experience and strong brand presence.',
+  features: [
+    'Fast Turnaround',
+    'Full Color Printing',
+    'Design Support',
+    'Free Shipping'
+  ],
+  overviewTitle: 'Product Overview Of Custom Rigid Boxes',
+  overviewContent: 'Custom Rigid Boxes are an exceptional packaging solution for high-end luxury products. These boxes feature a durable, solid structure that maintains its shape even through rough handling conditions. To maintain the aesthetic appeal, these boxes are pasted with printed or textured cardstock materials. The solid structure matched with their luxurious appeal makes rigid setup boxes the go-to choice for many different products and industries. Whether cosmetics, jewelry, electronics, or apparel, these boxes are the perfect packaging solution for your needs. If you are looking for something that can set your product apart from the competition, look no further than rigid boxes.',
+  overviewImage: '/images/rigid-end.webp',
+  overviewHoverImage: '/images/rigid-end-1.webp',
     variants: [
       {
         name: "Custom Magnetic Closure Boxes",
@@ -454,12 +936,113 @@ You can design this box in any size, shape, and style at wholesale prices as per
           "Sliding boxes are designed with two parts — an outer sleeve and an inner tray that slides in and out. They offer strong protection and an impressive unboxing experience, making them a preferred choice for high-end gifts and retail products.",
       },
     ],
-  },
+},
 
-  'cigarette-boxes': {
-    customization: {},
-    faqs: false,
-    title: 'Cigarette Boxes',
+'cigarette-boxes': {
+  learnMoreSection: {
+    title: 'Learn More About E-Cigarette & Vape Packaging',
+    subtitle: 'Compliant, Secure & Stylish Packaging For Cannabis & Vape Products',
+    
+    features: [
+      {
+        title: 'Regulatory Compliance',
+        description: 'Ample space for health warnings, ingredient lists, and legal disclaimers required by law.'
+      },
+      {
+        title: 'Child-Resistant Options',
+        description: 'Secure closures and tamper-evident features protect products and meet safety regulations.'
+      },
+      {
+        title: 'Premium Presentation',
+        description: 'High-quality printing and finishes position your vape products as premium offerings.'
+      }
+    ],
+    
+    sections: [
+      {
+        heading: 'Packaging That Meets Industry Standards',
+        content: [
+          'E-cigarette and vape packaging must comply with strict regulations for labeling and safety.',
+          'Our boxes provide ample space for health warnings, ingredient lists, and legal disclaimers.',
+          'Child-resistant closures and tamper-evident seals ensure product safety and compliance.',
+          'Custom designs help your brand stand out in the competitive vape and cannabis markets.'
+        ]
+      },
+      {
+        heading: 'Versatile Solutions for All Vape Products',
+        content: [
+          'CBD e-cigarettes, THC vape pens, disposable vapes, and refillable cartridges.',
+          'E-liquid bottles, vape juice packaging, and Juul pod containers.',
+          'Custom inserts protect delicate cartridges and prevent leaks during shipping.',
+          'Premium finishes like soft-touch and spot UV elevate brand perception and shelf appeal.'
+        ]
+      },
+      {
+        heading: 'Safety & Security Features',
+        content: [
+          'Child-resistant push-and-turn or squeeze-and-pull closures available.',
+          'Tamper-evident seals and perforated tear strips for product integrity.',
+          'Moisture-resistant materials protect products from humidity damage.',
+          'Custom inserts prevent movement and damage during transit.'
+        ]
+      }
+    ],
+    
+    materials: [
+      { label: 'Materials', value: 'Food-grade cardboard, Rigid paperboard, Eco-friendly kraft' },
+      { label: 'Safety Features', value: 'Child-resistant closures, Tamper-evident seals' },
+      { label: 'Printing', value: 'Full-color CMYK, Compliance labeling, QR codes' },
+      { label: 'Finishes', value: 'Matte, Gloss, Soft-touch, Spot UV, Foil stamping' }
+    ],
+    
+    highlights: [
+      'Fully compliant packaging',
+      'Child-resistant options available',
+      'Custom inserts for protection',
+      'Premium finishes for brand elevation'
+    ],
+    
+    faqs: [
+      { 
+        question: 'Are your vape boxes compliant with regulations?', 
+        answer: 'Yes! Our boxes are designed with ample space for health warnings, ingredient lists, and legal disclaimers to meet all federal and state regulatory requirements for vape and cannabis products.' 
+      },
+      { 
+        question: 'Do you offer child-resistant packaging?', 
+        answer: 'Absolutely! We provide certified child-resistant closures and tamper-evident seals to ensure product safety and regulatory compliance for both cannabis and vape products.' 
+      },
+      { 
+        question: 'Can I customize the box design?', 
+        answer: 'Yes! Full-color printing, custom finishes, and unique structural designs help your vape products stand out on dispensary shelves while meeting all compliance requirements.' 
+      },
+      { 
+        question: 'What sizes are available?', 
+        answer: 'We create custom sizes for all vape products including cartridges, pens, e-liquid bottles, and full kits. Every box is tailored to your exact specifications for perfect fit.' 
+      }
+    ],
+    
+    cta: {
+      title: 'Get Compliant, Premium Vape Packaging Today!',
+      subtitle: 'Regulatory-compliant, child-resistant, and beautifully designed. Protect your products and elevate your brand with confidence.'
+    }
+  },
+  
+  capabilitiesSection: {
+    title: 'Our Capabilities',
+    items: [
+      { label: 'Regulatory Compliance', value: 'Fully compliant' },
+      { label: 'Child-Resistant', value: 'Safety features' },
+      { label: 'Custom Sizing', value: 'Perfect fit' },
+      { label: 'Free Samples', value: 'Quality check' },
+      { label: 'Fast Turnaround', value: '7-12 business days' },
+      { label: 'Low MOQ', value: 'From 100 units' },
+      { label: 'Full-Color Printing', value: 'Premium graphics' },
+      { label: 'Free Shipping', value: 'USA-wide' }
+    ]
+  },
+  customization: {},
+  faqs: false,
+  title: 'Cigarette Boxes',
     slug: 'cigarette-boxes',
     metaDescription: 'Stylish and protective cigarette boxes with customizable finishes and secure closures.',
     keywords: [
@@ -551,52 +1134,241 @@ You can design this box in any size, shape, and style at wholesale prices as per
   },
 
   'burger-boxes': {
-    customization: {},
-    faqs: false,
-    title: 'Burger Boxes',
-    slug: 'burger-boxes',
-    metaDescription: 'Custom burger boxes for dine-in, takeout, or delivery. Durable, insulated, with custom branding options.',
-    keywords: [
-      'custom burger boxes',
-      'food packaging',
-      'takeout boxes',
-      'restaurant packaging'
-    ],
-    mainImage: '/images/WhatsApp_Image_2025-08-05_at_4.12.26_AM-removebg-preview.webp',
-    hoverImage: '/images/WhatsApp_Image_2025-08-05_at_4.12.27_AM-removebg-preview.webp',
-    description: 'Designed to keep your burgers fresh, secure, and visually appealing. Perfect for dine-in, takeout, or delivery, they offer durability, insulation, and custom branding options.',
+  learnMoreSection: {
+    title: 'Learn More About Burger Boxes',
+    subtitle: 'Keep Food Fresh, Hot & Appealing From Kitchen To Customer',
+    
     features: [
-      'Fast Turnaround',
-      'Full Color Printing',
-      'Design Support',
-      'Free Shipping'
+      {
+        title: 'Grease Resistance',
+        description: 'Food-safe coating prevents oil and grease from seeping through, maintaining box integrity and appearance.'
+      },
+      {
+        title: 'Heat Retention',
+        description: 'Insulated materials keep burgers hot and fresh during delivery and takeout service.'
+      },
+      {
+        title: 'Eco-Friendly Materials',
+        description: 'Sustainable bamboo and paperboard options appeal to environmentally-conscious customers.'
+      }
     ],
-    overviewTitle: 'Product Overview',
-    overviewContent: 'Burgers are a global favorite and a staple of fast food found at virtually every street corner. With the rise of online ordering, distinguishing your brand from the competition has never been more crucial. Thats where innovative packaging comes into play. Our unique and eye-catching burger boxes can capture customer attention and encourage repeat business. At Half Price Packaging, we specialize in creating burger packaging that not only showcases your delicious burgers but also ensures safe transit. Our boxes are designed to accommodate burgers along with ketchup sachets, salad, and fries, providing a complete dining experience. The personalized burger boxes we create stand out with their use of sustainable bamboo and food-safe paperboard. This material offers a high-quality appearance while protecting your food from moisture and other contaminants. In addition, we utilize soy-based and water-based inks in our printing processes, increasing your brands visibility in an eco-friendly manner.',
-    overviewImage: '/images/Rigid Kraft Box.webp',
-    overviewHoverImage: '/images/Die Cut Rigid Box.webp',
+    
+    sections: [
+      {
+        heading: 'Perfect for Fast Food & Restaurants',
+        content: [
+          'Custom burger boxes protect food during transit and maintain ideal temperature.',
+          'Grease-resistant coating prevents leaks and keeps boxes looking professional.',
+          'Ample space for burgers, fries, sauces, and salads in one convenient package.',
+          'Custom branding turns every delivery into a marketing opportunity that builds loyalty.'
+        ]
+      },
+      {
+        heading: 'Sustainable & Food-Safe',
+        content: [
+          'Food-safe paperboard and bamboo materials ensure customer health and safety.',
+          'Eco-friendly inks and coatings reduce environmental impact without compromising quality.',
+          'Recyclable and biodegradable options available for sustainable operations.',
+          'Grease-resistant barriers maintain freshness without harmful chemicals.'
+        ]
+      },
+      {
+        heading: 'Custom Branding Opportunities',
+        content: [
+          'Full-color printing with vibrant logos and graphics increases brand recognition.',
+          'Custom sizes for regular burgers, sliders, double-stacks, and combo meals.',
+          'Window cutouts available to showcase your delicious burgers.',
+          'Soy-based and water-based inks for eco-friendly, vibrant branding.'
+        ]
+      }
+    ],
+    
+    materials: [
+      { label: 'Materials', value: 'Food-safe paperboard, Bamboo, Kraft, Corrugated' },
+      { label: 'Coating', value: 'Grease-resistant, Moisture barrier, Heat-retaining' },
+      { label: 'Printing', value: 'Water-based inks, Soy-based inks, Full-color CMYK' },
+      { label: 'Sustainability', value: 'Recyclable, Biodegradable, Compostable options' }
+    ],
+    
+    highlights: [
+      'Grease & moisture resistant',
+      'Keeps food hot and fresh',
+      'Eco-friendly materials',
+      'Custom branding opportunities'
+    ],
+    
+    faqs: [
+      { 
+        question: 'Are burger boxes food-safe?', 
+        answer: 'Yes! All our burger boxes use food-grade materials with grease-resistant coatings that meet FDA safety standards for direct food contact and ensure customer health.' 
+      },
+      { 
+        question: 'Can I print my logo on burger boxes?', 
+        answer: 'Absolutely! Custom full-color printing with your logo, branding, and messaging helps increase brand visibility and customer loyalty with every order delivered.' 
+      },
+      { 
+        question: 'Are eco-friendly options available?', 
+        answer: 'Yes! We offer sustainable materials including bamboo, kraft paper, and recyclable paperboard with soy-based or water-based inks for environmentally-responsible businesses.' 
+      },
+      { 
+        question: 'What sizes do you offer?', 
+        answer: 'We create custom sizes to fit any burger type—from sliders to double-stacked burgers. We can also design combo boxes for burgers, fries, drinks, and sides.' 
+      }
+    ],
+    
+    cta: {
+      title: 'Order Custom Burger Boxes Today!',
+      subtitle: 'Food-safe, eco-friendly, and custom-branded. Keep your burgers fresh and your brand memorable with every delivery!'
+    }
   },
-
+  
+  capabilitiesSection: {
+    title: 'Our Capabilities',
+    items: [
+      { label: 'Food-Safe Materials', value: 'Certified safe' },
+      { label: 'Eco-Friendly Options', value: 'Sustainable' },
+      { label: 'Custom Sizing', value: 'Any size' },
+      { label: 'Fast Turnaround', value: '5-10 business days' },
+      { label: 'Full-Color Printing', value: 'Vibrant branding' },
+      { label: 'Low MOQ', value: 'From 100 units' },
+      { label: 'Free Shipping', value: 'USA delivery' },
+      { label: '24/7 Support', value: 'Always here' }
+    ]
+  },
+  customization: {},
+  faqs: false,
+  title: 'Burger Boxes',
+  slug: 'burger-boxes',
+  metaDescription: 'Custom burger boxes for dine-in, takeout, or delivery. Durable, insulated, with custom branding options.',
+  keywords: [
+    'custom burger boxes',
+    'food packaging',
+    'takeout boxes',
+    'restaurant packaging'
+  ],
+  mainImage: '/images/WhatsApp_Image_2025-08-05_at_4.12.26_AM-removebg-preview.webp',
+  hoverImage: '/images/WhatsApp_Image_2025-08-05_at_4.12.27_AM-removebg-preview.webp',
+  description: 'Designed to keep your burgers fresh, secure, and visually appealing. Perfect for dine-in, takeout, or delivery, they offer durability, insulation, and custom branding options.',
+  features: [
+    'Fast Turnaround',
+    'Full Color Printing',
+    'Design Support',
+    'Free Shipping'
+  ],
+  overviewTitle: 'Product Overview',
+  overviewContent: 'Burgers are a global favorite and a staple of fast food found at virtually every street corner. With the rise of online ordering, distinguishing your brand from the competition has never been more crucial. Thats where innovative packaging comes into play. Our unique and eye-catching burger boxes can capture customer attention and encourage repeat business. At Half Price Packaging, we specialize in creating burger packaging that not only showcases your delicious burgers but also ensures safe transit. Our boxes are designed to accommodate burgers along with ketchup sachets, salad, and fries, providing a complete dining experience. The personalized burger boxes we create stand out with their use of sustainable bamboo and food-safe paperboard. This material offers a high-quality appearance while protecting your food from moisture and other contaminants. In addition, we utilize soy-based and water-based inks in our printing processes, increasing your brands visibility in an eco-friendly manner.',
+  overviewImage: '/images/Rigid Kraft Box.webp',
+  overviewHoverImage: '/images/Die Cut Rigid Box.webp',
+},
   'magnetic-closure': {
-    customization: {},
-    faqs: false,
     title: 'Magnetic Closure Boxes',
+    heading: 'Learn More About Magnetic Closure Boxes',
+    subtitle: 'Elegant, Secure & Reusable Premium Packaging That Impresses',
+    
+    features: [
+      {
+        title: 'Smooth Magnetic Closure',
+        description: 'Built-in magnets provide effortless opening and closing with a satisfying, premium snap.'
+      },
+      {
+        title: 'Luxury Presentation',
+        description: 'Premium materials and finishes create unforgettable unboxing experiences that delight customers.'
+      },
+      {
+        title: 'Reusable Design',
+        description: 'Durable construction encourages customers to keep and reuse boxes, extending brand exposure.'
+      }
+    ],
+    
+    selection: [
+      {
+        heading: 'Perfect for Luxury Products',
+        content: [
+          'Magnetic closure boxes combine functionality with premium presentation for high-end brands.',
+          'Built-in neodymium magnets create a smooth, satisfying opening experience.',
+          'Ideal for jewelry, cosmetics, electronics, luxury gifts, and premium products.',
+          'Reusable design means customers keep boxes for storage, providing ongoing brand visibility.'
+        ]
+      },
+      {
+        heading: 'Customization for Every Brand',
+        content: [
+          'Choose from various finishes: soft-touch, linen, leather, or textured materials.',
+          'Add foil stamping in gold, silver, rose gold, or custom colors for elegant branding.',
+          'Embossing and debossing for dimensional, tactile branding elements.',
+          'Custom inserts, ribbon pulls, and satin linings elevate the unboxing experience.'
+        ]
+      },
+      {
+        heading: 'Superior Construction & Materials',
+        content: [
+          'High-density chipboard (1200-1800 GSM) ensures long-lasting durability.',
+          'Premium wrapping materials including art paper, fabric, and leather.',
+          'Embedded magnets provide secure closure without clasps or ties.',
+          'Available in any size from small jewelry boxes to large gift sets.'
+        ]
+      }
+    ],
+    
+    materials: [
+      { label: 'Base Material', value: 'Rigid chipboard (1200-1800 GSM), Premium cardboard' },
+      { label: 'Closure', value: 'Embedded neodymium magnets for secure closure' },
+      { label: 'Exterior', value: 'Art paper, Textured paper, Fabric, Leather wrapping' },
+      { label: 'Interior', value: 'Satin lining, Velvet, Foam inserts, Custom trays' },
+      { label: 'Finishes', value: 'Soft-touch, Foil stamping, Embossing, Spot UV' }
+    ],
+    
+    highlight: [
+      'Smooth magnetic closure',
+      'Premium, luxury feel',
+      'Fully customizable',
+      'Reusable and durable'
+    ],
+    
+    faqs: [
+      { 
+        question: 'How strong are the magnets?', 
+        answer: 'We use premium neodymium magnets that provide secure closure while remaining easy to open. The strength can be customized based on box size and product weight for optimal functionality.' 
+      },
+      { 
+        question: 'What products are magnetic boxes best for?', 
+        answer: 'Magnetic closure boxes are perfect for jewelry, watches, high-end cosmetics, electronics, luxury gifts, premium apparel, and any product requiring elegant presentation and reusable packaging.' 
+      },
+      { 
+        question: 'Can I add custom inserts?', 
+        answer: 'Yes! We offer foam inserts, velvet trays, ribbon pulls, and custom-molded compartments to securely display and protect your products with elegant presentation.' 
+      },
+      { 
+        question: 'Are these boxes reusable?', 
+        answer: 'Absolutely! The durable construction and magnetic closure make these boxes perfect for long-term storage, extending your brand\'s visibility and creating lasting customer relationships.' 
+      }
+    ],
+    
+    cta: {
+      heading: 'Create Magnetic Closure Boxes That Wow!',
+      subtitle: 'Luxury packaging with smooth magnetic closures. Impress customers with every unboxing experience and build lasting brand loyalty.'
+    },
+    
+    capabilities: {
+      heading: 'Our Capabilities',
+      items: [
+        { label: 'Premium Materials', value: 'Luxury finishes' },
+        { label: 'Custom Magnets', value: 'Secure closure' },
+        { label: 'Expert Team', value: 'Design support' },
+        { label: 'Quality Assurance', value: 'Perfect quality' },
+        { label: 'Free Samples', value: 'Quality check' },
+        { label: 'Custom Sizing', value: 'Any dimension' },
+        { label: 'Low MOQ', value: 'From 100 units' },
+        { label: 'Free Shipping', value: 'USA delivery' }
+      ]
+    },
+    
     slug: 'magnetic-closure',
     metaDescription: 'Premium magnetic closure boxes for luxury products and gifts. Elegant design with secure magnetic flap.',
-    keywords: [
-      'magnetic closure boxes',
-      'luxury gift boxes',
-      'premium packaging'
-    ],
+    keywords: ['magnetic closure boxes', 'luxury gift boxes', 'premium packaging'],
     mainImage: '/images/WhatsApp_Image_2025-08-05_at_3.37.56_AM-removebg-preview.webp',
     hoverImage: '/images/WhatsApp_Image_2025-08-05_at_3.37.56_AM__1_-removebg-preview.webp',
     description: 'Premium unboxing experience with their sleek design and secure magnetic flap. Ideal for luxury products and gifts, they combine elegance with functionality.',
-    features: [
-      'Fast Turnaround',
-      'Full Color Printing',
-      'Design Support',
-      'Free Shipping'
-    ],
     overviewTitle: 'Product Overview',
     overviewContent: 'Burgers are a global favorite and a staple of fast food found at virtually every street corner. With the rise of online ordering, distinguishing your brand from the competition has never been more crucial. Thats where innovative packaging comes into play. Our unique and eye-catching burger boxes can capture customer attention and encourage repeat business. At Half Price Packaging, we specialize in creating burger packaging that not only showcases your delicious burgers but also ensures safe transit. Our boxes are designed to accommodate burgers along with ketchup sachets, salad, and fries, providing a complete dining experience. The personalized burger boxes we create stand out with their use of sustainable bamboo and food-safe paperboard. This material offers a high-quality appearance while protecting your food from moisture and other contaminants. In addition, we utilize soy-based and water-based inks in our printing processes, increasing your brands visibility in an eco-friendly manner.',
     overviewImage: '/images/cosmetic lables.webp',
@@ -604,31 +1376,18 @@ You can design this box in any size, shape, and style at wholesale prices as per
   },
 
   'cosmetic-boxes': {
-    customization: {},
-    faqs: false,
     title: 'Cosmetic Boxes',
     slug: 'cosmetic-boxes',
     metaDescription: 'Custom cosmetic boxes for skincare and beauty products. Sleek, durable, and fully customizable.',
-    keywords: [
-      'custom cosmetic boxes',
-      'beauty packaging',
-      'skincare boxes',
-      'makeup packaging'
-    ],
+    keywords: ['custom cosmetic boxes', 'beauty packaging', 'skincare boxes', 'makeup packaging'],
     mainImage: '/images/WhatsApp_Image_2025-08-05_at_3.43.00_AM-removebg-preview.webp',
     hoverImage: '/images/WhatsApp_Image_2025-08-05_at_3.43.00_AM__1_-removebg-preview.webp',
-    description: 'Enhance your brand\'s image while securely packaging skincare and beauty products. Sleek, durable, and fully customizable, they\'re perfect for both retail display and gifting.',
-    features: [
-      'Fast Turnaround',
-      'Full Color Printing',
-      'Design Support',
-      'Free Shipping'
-    ],
+    description: 'Enhance your brand\'s image while securely packaging skincare and beauty products.',
     overviewTitle: 'Custom Cosmetic Packaging That Highlights Every Product With Style',
-    overviewContent: 'In the beauty world, your packaging is your silent salesperson. It’s about captivating your audience the moment they lay eyes on your product. Stunning cosmetic packaging needs to engage and convince consumers to choose your brand over the rest. Half Price Packaging understands the needs of every beauty brand, no matter where you stand in the market. We ensure our clients receive packaging that is bold and unique, combined with brand storytelling, with elegant presentation and reliable protection.',
+    overviewContent: 'In the beauty world, your packaging is your silent salesperson...',
     overviewImage: '/images/Tuck Mailer Box.webp',
     overviewHoverImage: '/images/Book Mailer Box.webp',
-   variants: [
+    variants: [
       {
         name: "Makeup Boxes",
         image: "/images/make up box.webp",
@@ -677,12 +1436,12 @@ You can design this box in any size, shape, and style at wholesale prices as per
         description:
           "Custom Cosmetic Labels to enhance product packaging with vibrant colors and lasting adhesive. Perfect for personalizing your cosmetics and maintaining brand consistency.",
       },
-      {
-        name: "Lipstick Boxes",
-        image: "/images/lipstick boxes.webp",
-        description:
-          "Elegant Lipstick Boxes that protect your products and provide a luxurious unboxing experience. Custom printing available to showcase your brand identity.",
-      },
-    ],
-  },
-}
+        {
+          name: "Lipstick Boxes",
+          image: "/images/lipstick boxes.webp",
+          description:
+            "Elegant Lipstick Boxes that protect your products and provide a luxurious unboxing experience. Custom printing available to showcase your brand identity.",
+        },
+      ],
+    },
+  };
