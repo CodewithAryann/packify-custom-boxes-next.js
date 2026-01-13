@@ -162,6 +162,70 @@ capabilitiesSection: {
     { label: 'Eco-Friendly Options', value: 'Sustainable materials' }
   ]
 },
+productOverview: {
+      title: 'Product Overview',
+      description: 'When it comes to versatile and professional packaging, tuck boxes lead the way. Their secure closure mechanism and easy assembly make them the perfect choice for packaging, storing, and displaying various products across multiple industries.',
+      bullets: [
+        {
+          title: 'Sturdy Structure',
+          description: 'These durable boxes feature secure tuck-in flaps that provide reliable closure without adhesives, ensuring products stay protected during storage and transit.'
+        },
+        {
+          title: 'Customization Freedom',
+          description: 'Customize in desired shapes, styles, sizes, and printing options as per your requirements - from tuck-end to auto-lock designs.'
+        },
+        {
+          title: 'Premium Printing',
+          description: 'Full-color CMYK printing with Pantone matching lets you add custom graphics and brand details with vibrant colors and professional printing effects.'
+        },
+        {
+          title: 'Protective Coatings',
+          description: 'Our high-quality laminations including matte, gloss, and soft-touch finishes amplify the boxes\' appearance and strength.'
+        },
+        {
+          title: 'Attractive Finishes',
+          description: 'Give a luxurious touch with premium finishes like spot UV, embossing, debossing, and metallic foil stamping.'
+        },
+        {
+          title: 'Practical Design',
+          description: 'Quick-fold assembly saves time and labor costs, perfect for high-volume packaging operations and efficient workflows.'
+        }
+      ],
+      learnMore: {
+        title: 'Learn More About Tuck Boxes',
+        sections: [
+          {
+            heading: 'Tuck Boxes for Professional Presentation & Reliable Protection',
+            content: 'No matter how premium your product is, if it\'s not packaged professionally, you won\'t make the right impression. Tuck boxes offer the perfect balance of functionality and aesthetics. Their versatile design makes them suitable for industries ranging from cosmetics to electronics, while the easy assembly reduces packaging time without compromising on presentation quality.'
+          },
+          {
+            content: 'At Half Price Packaging, you can get this beneficial packaging solution with unlimited customization. We utilize premium cardboard and paperboard to craft the most professional tuck boxes for your valuable products. You can customize the shapes, styles, and sizes of the boxes as per your product requirements. Our advanced printing technology creates tuck boxes that satisfy your diverse packaging needs while maintaining cost-effectiveness.'
+          },
+          {
+            heading: 'Promote Your Brand with Impressively Designed Custom Tuck Boxes',
+            content: 'Your tuck boxes offer ample space for custom printing and branding. You can utilize this space effectively to earn significant marketing benefits. Your attractive brand name, logo, and graphics can be printed with vibrant colors on these boxes to maximize brand exposure and customer engagement.'
+          },
+          {
+            content: 'You can send us your design ideas or take advantage of our free design assistance from professional designers. The way we design your box will depend on your product type and brand identity, ensuring perfect alignment with your marketing goals.'
+          },
+          {
+            heading: 'Easy Assembly for Smooth Operations & Better Efficiency',
+            content: 'Our custom tuck boxes are designed for straightforward setup. The assembly is quick and streamlined, requiring no adhesive or glue. This makes packaging hassle-free and cost-effective for high-volume operations.',
+            list: [
+              'E-commerce and online retail',
+              'Retail stores and boutiques',
+              'Product launches and promotions',
+              'Subscription box services',
+              'Gift packaging and special occasions'
+            ]
+          },
+          {
+            heading: 'Cost-Effective Packaging Without Compromising Quality',
+            content: 'Tuck boxes are lightweight yet durable, offering premium protection while keeping shipping costs low. Their efficient design maximizes storage space, and the easy assembly reduces labor costs. With custom tuck boxes, you get professional packaging that\'s budget-friendly for both small businesses and large enterprises.'
+          }
+        ]
+      }
+    },
 customization: {},
 faqs: false,
 title: 'Tuck Boxes',
@@ -282,6 +346,66 @@ These boxes are designed to give you a competitive advantage in the market. Plus
 },
 
 'dispenser-boxes': {
+  productOverview: {
+      title: 'Product Overview',
+      description: 'When it comes to convenient retail packaging with easy product access, dispenser boxes take the lead. Their innovative design with perforated openings makes them ideal for point-of-sale displays, grab-and-go retail, and maximizing product visibility.',
+      bullets: [
+        {
+          title: 'Convenient Dispensing',
+          description: 'Perforated tear-out or flip-top openings allow customers to grab products quickly while keeping remaining items organized and protected.'
+        },
+        {
+          title: 'Customization Options',
+          description: 'Customize dispensing mechanisms, sizes, shapes, and printing to perfectly match your product and retail environment needs.'
+        },
+        {
+          title: 'Vibrant Printing',
+          description: 'Full-color graphics and branding transform your dispenser into a powerful point-of-sale marketing tool that attracts customers.'
+        },
+        {
+          title: 'Durable Construction',
+          description: 'Sturdy cardboard and corrugated materials withstand frequent use in high-traffic retail environments.'
+        },
+        {
+          title: 'Space-Efficient Design',
+          description: 'Stand-up design maximizes shelf space and product visibility while organizing inventory efficiently.'
+        },
+        {
+          title: 'Food-Safe Materials',
+          description: 'Grease-resistant and moisture-resistant options available for food products with safe, compliant coatings.'
+        }
+      ],
+      learnMore: {
+        title: 'Learn More About Dispenser Boxes',
+        sections: [
+          {
+            heading: 'Dispenser Boxes for Maximum Retail Impact & Customer Convenience',
+            content: 'In retail environments, convenience is king. Dispenser boxes provide controlled product access while maintaining organization and visual appeal. Perfect for candy, snacks, hygiene products, and small retail items, these boxes turn your products into grab-and-go purchases that drive impulse sales.'
+          },
+          {
+            content: 'At Half Price Packaging, we create custom dispenser boxes that combine functionality with eye-catching design. Our boxes feature various dispensing mechanisms including tear strips, flip-outs, and push-through designs. We use durable materials that withstand constant use while maintaining their professional appearance throughout the product lifecycle.'
+          },
+          {
+            heading: 'Boost Sales with Custom-Branded Dispenser Packaging',
+            content: 'Your dispenser box is more than just packaging—it\'s a silent salesperson on the retail shelf. Custom graphics, vibrant colors, and strategic branding turn these boxes into powerful marketing tools that attract attention and encourage purchases at point-of-sale.'
+          },
+          {
+            content: 'Our design team can help create dispenser boxes that maximize brand visibility while providing practical product access. Window cutouts can showcase products inside, while custom printing ensures your brand stands out in crowded retail environments.'
+          },
+          {
+            heading: 'Perfect for High-Traffic Retail Environments',
+            content: 'Dispenser boxes are engineered for durability and convenience in busy stores.',
+            list: [
+              'Convenience stores and gas stations',
+              'Supermarkets and grocery stores',
+              'Pharmacies and health stores',
+              'Gift shops and boutiques',
+              'Checkout counter displays'
+            ]
+          }
+        ]
+      }
+    },
   learnMoreSection: {
     title: 'Learn More About Dispenser Boxes',
     subtitle: 'Convenient Access Meets Eye-Catching Display For Maximum Sales',
@@ -571,6 +695,70 @@ customization: {
     faqs: false,
     title: 'Mailer Boxes',
     slug: 'mailer-boxes',
+    productOverview: {
+      title: 'Product Overview',
+      description: 'When it comes to shipping products safely with premium presentation, mailer boxes are the top choice. Their self-locking design and durable construction make them perfect for e-commerce, subscription boxes, and direct-to-consumer shipping.',
+      bullets: [
+        {
+          title: 'Secure Self-Lock Design',
+          description: 'Built-in locking flaps provide strong protection without tape or glue, ensuring products arrive safely while creating smooth unboxing experiences.'
+        },
+        {
+          title: 'Complete Customization',
+          description: 'Customize sizes, styles, printing (inside and out), and materials to create packaging that perfectly represents your brand.'
+        },
+        {
+          title: 'Premium Printing',
+          description: 'Full CMYK and Pantone printing options let you create stunning interior and exterior designs for memorable unboxing moments.'
+        },
+        {
+          title: 'Protective Materials',
+          description: 'Corrugated cardboard and premium paperboard provide exceptional strength against shipping impacts and stacking pressure.'
+        },
+        {
+          title: 'Luxury Finishes',
+          description: 'Elevate your brand with matte, gloss, soft-touch lamination, spot UV, embossing, and foil stamping options.'
+        },
+        {
+          title: 'Eco-Friendly Options',
+          description: 'Recyclable kraft and sustainable materials available for environmentally-conscious brands and customers.'
+        }
+      ],
+      learnMore: {
+        title: 'Learn More About Mailer Boxes',
+        sections: [
+          {
+            heading: 'Mailer Boxes for E-Commerce Success & Brand Loyalty',
+            content: 'In the world of online shopping, your packaging is often the first physical touchpoint with customers. Mailer boxes combine protective shipping functionality with premium presentation to create unboxing experiences that build brand loyalty and encourage social sharing.'
+          },
+          {
+            content: 'At Half Price Packaging, we specialize in creating custom mailer boxes for e-commerce and subscription brands. Our boxes use durable corrugated materials that protect products during transit while maintaining a professional appearance. The self-locking design eliminates the need for tape, creating a cleaner look and easier opening experience.'
+          },
+          {
+            heading: 'Create Unforgettable Unboxing Experiences',
+            content: 'Custom printed mailer boxes transform ordinary deliveries into memorable brand moments. Print your logo, brand colors, and messaging on both the exterior and interior to create Instagram-worthy unboxing experiences that customers want to share.'
+          },
+          {
+            content: 'Our design team can help you create mailer boxes that reflect your brand personality—from minimalist kraft designs to vibrant full-color graphics. Add QR codes, thank-you messages, or care instructions to enhance customer engagement and build lasting relationships.'
+          },
+          {
+            heading: 'Perfect for Modern Shipping Needs',
+            content: 'Mailer boxes are designed for efficiency and protection across all shipping scenarios.',
+            list: [
+              'E-commerce and online retail stores',
+              'Subscription box services',
+              'Promotional kits and product samples',
+              'Crowdfunding campaign rewards',
+              'Direct-to-consumer brand shipments'
+            ]
+          },
+          {
+            heading: 'Sustainable Shipping Without Compromising Protection',
+            content: 'Our mailer boxes are lightweight yet strong, reducing shipping costs while protecting your products. Choose from eco-friendly kraft options or recyclable materials to align with sustainability goals. The efficient design minimizes material waste while maximizing protection and presentation value.'
+          }
+        ]
+      }
+    },
     metaDescription: 'Premium custom mailer boxes for e-commerce and subscription products. Designed for durability and brand impact. Free US shipping and worldwide delivery.',
     keywords: [
       'custom mailer boxes',
@@ -748,6 +936,70 @@ customization: {
 },
 
 'rigid-boxes': {
+  productOverview: {
+      title: 'Product Overview',
+      description: 'When it comes to luxury packaging that commands attention, rigid boxes are unmatched. Their premium construction and elegant finishes make them the perfect choice for high-end products requiring sophisticated presentation and superior protection.',
+      bullets: [
+        {
+          title: 'Premium Structure',
+          description: 'Thick high-density chipboard (1200-1800 GSM) maintains perfect shape permanently, providing superior protection and luxury feel.'
+        },
+        {
+          title: 'Unlimited Customization',
+          description: 'Customize with any size, finish, closure type, and interior design to create packaging that perfectly matches your luxury brand.'
+        },
+        {
+          title: 'Elegant Printing',
+          description: 'Premium printing on high-quality wrapping materials creates stunning visual impact with precise color matching and sharp details.'
+        },
+        {
+          title: 'Luxury Finishes',
+          description: 'Soft-touch lamination, linen textures, leather wrapping, and fabric finishes provide tactile luxury that customers remember.'
+        },
+        {
+          title: 'Sophisticated Details',
+          description: 'Foil stamping, embossing, debossing, and spot UV create dimensional branding elements that exude premium quality.'
+        },
+        {
+          title: 'Reusable Design',
+          description: 'Durable construction and elegant appearance encourage customers to keep boxes for storage, extending brand visibility indefinitely.'
+        }
+      ],
+      learnMore: {
+        title: 'Learn More About Rigid Boxes',
+        sections: [
+          {
+            heading: 'Rigid Boxes for Luxury Brands & Premium Products',
+            content: 'In luxury markets, packaging is not just protection—it\'s part of the product experience. Rigid boxes convey premium quality instantly, elevating perceived value and creating unforgettable first impressions that justify premium pricing and build brand prestige.'
+          },
+          {
+            content: 'At Half Price Packaging, we craft rigid boxes using thick chipboard that maintains its shape permanently. Our boxes feature premium wrapping materials including art paper, textured finishes, fabric, and even leather options. Every detail is designed to create an unboxing experience worthy of your luxury products.'
+          },
+          {
+            heading: 'Elevate Your Brand with Sophisticated Packaging',
+            content: 'Rigid boxes offer endless customization possibilities for luxury branding. Add magnetic closures for smooth opening experiences, ribbon pulls for elegance, or custom foam inserts for secure product presentation. Foil stamping in metallic colors adds prestige, while embossing creates tactile branding that customers can feel.'
+          },
+          {
+            content: 'Our expert designers work with luxury brands to create packaging that reflects brand values and appeals to discerning customers. From minimalist elegance to ornate sophistication, we bring your vision to life with precision craftsmanship and attention to every detail.'
+          },
+          {
+            heading: 'Perfect for Premium Products',
+            content: 'Rigid boxes are the packaging of choice for luxury goods across multiple industries.',
+            list: [
+              'Fine jewelry and luxury watches',
+              'Premium cosmetics and skincare',
+              'High-end electronics and tech accessories',
+              'Luxury gifts and special occasions',
+              'Designer accessories and fashion items'
+            ]
+          },
+          {
+            heading: 'Investment in Brand Perception & Customer Loyalty',
+            content: 'Rigid boxes are more than packaging—they\'re brand ambassadors. Customers keep these beautiful boxes for storage, creating ongoing brand visibility in homes and offices. The reusable nature extends your marketing investment far beyond the initial purchase, building emotional connections that drive customer loyalty and referrals.'
+          }
+        ]
+      }
+    },
   learnMoreSection: {
     title: 'Learn More About Rigid Boxes',
     subtitle: 'Luxury Packaging That Commands Attention & Delivers Premium Unboxing Experiences',
@@ -939,6 +1191,70 @@ customization: {
 },
 
 'cigarette-boxes': {
+  productOverview: {
+      title: 'Product Overview',
+      description: 'When it comes to compliant, secure packaging for vape and cannabis products, specialized e-cigarette boxes are essential. These boxes provide the protection, labeling space, and child-resistant features required by law while maintaining premium brand presentation.',
+      bullets: [
+        {
+          title: 'Regulatory Compliance',
+          description: 'Ample space for health warnings, ingredient lists, legal disclaimers, and QR codes to meet all federal and state requirements.'
+        },
+        {
+          title: 'Child-Resistant Options',
+          description: 'Certified child-resistant closures and tamper-evident seals ensure product safety and meet strict regulatory standards.'
+        },
+        {
+          title: 'Custom Branding',
+          description: 'Full-color printing with vibrant graphics helps your vape products stand out while maintaining compliance with regulations.'
+        },
+        {
+          title: 'Protective Construction',
+          description: 'Food-grade materials with moisture barriers protect cartridges and e-liquids from humidity and damage during storage.'
+        },
+        {
+          title: 'Premium Finishes',
+          description: 'Soft-touch lamination, spot UV, and embossing elevate brand perception in competitive dispensary and retail environments.'
+        },
+        {
+          title: 'Custom Inserts',
+          description: 'Foam or cardboard inserts prevent cartridge movement, protect against leaks, and create organized product presentation.'
+        }
+      ],
+      learnMore: {
+        title: 'Learn More About Vape & Cannabis Packaging',
+        sections: [
+          {
+            heading: 'Compliant Packaging for Vape & Cannabis Products',
+            content: 'The vape and cannabis industries face strict packaging regulations designed to protect consumers and ensure product safety. Our e-cigarette boxes are designed with compliance in mind, providing ample labeling space for health warnings, ingredient lists, and legal disclaimers required by law.'
+          },
+          {
+            content: 'At Half Price Packaging, we stay current with evolving regulations across different states and jurisdictions. Our packaging solutions meet child-resistant requirements, include tamper-evident features, and provide the labeling flexibility needed for both THC and CBD products. We use food-grade materials that protect product integrity while maintaining compliance.'
+          },
+          {
+            heading: 'Stand Out in Competitive Markets with Premium Branding',
+            content: 'Compliance doesn\'t mean sacrificing brand identity. Our custom vape boxes feature premium printing and finishes that help your products stand out on dispensary shelves and in retail environments. Soft-touch lamination, spot UV accents, and embossed logos create premium perception while meeting all regulatory requirements.'
+          },
+          {
+            content: 'We work with vape and cannabis brands to create packaging that balances compliance with marketing impact. Custom graphics, window cutouts, and creative structural designs help differentiate your products while ensuring customer safety and regulatory approval.'
+          },
+          {
+            heading: 'Perfect for All Vape & Cannabis Products',
+            content: 'Our packaging solutions accommodate the full range of vape and cannabis items.',
+            list: [
+              'CBD and THC vape cartridges and pens',
+              'Disposable vapes and pod systems',
+              'E-liquid bottles and vape juice',
+              'Cannabis concentrates and extracts',
+              'Juul pods and compatible cartridges'
+            ]
+          },
+          {
+            heading: 'Safety Features That Protect Consumers & Your Brand',
+            content: 'Child-resistant closures, tamper-evident seals, and secure packaging protect both consumers and your brand reputation. Our boxes prevent unauthorized access while remaining easy for adults to open. Moisture-resistant materials and protective inserts ensure products arrive in perfect condition, maintaining potency and customer satisfaction.'
+          }
+        ]
+      }
+    },
   learnMoreSection: {
     title: 'Learn More About E-Cigarette & Vape Packaging',
     subtitle: 'Compliant, Secure & Stylish Packaging For Cannabis & Vape Products',
@@ -1134,6 +1450,70 @@ customization: {
   },
 
   'burger-boxes': {
+    productOverview: {
+      title: 'Product Overview',
+      description: 'When it comes to food packaging that keeps burgers fresh, hot, and appealing, custom burger boxes are essential. Their grease-resistant construction and heat-retaining properties make them perfect for takeout, delivery, and fast-food service.',
+      bullets: [
+        {
+          title: 'Grease-Resistant Coating',
+          description: 'Food-safe coating prevents oil and grease from seeping through, maintaining box integrity and professional appearance during delivery.'
+        },
+        {
+          title: 'Heat Retention',
+          description: 'Insulated materials keep burgers hot and fresh during transit, ensuring customers receive food at optimal temperature.'
+        },
+        {
+          title: 'Custom Branding',
+          description: 'Full-color printing with logos and graphics transforms every delivery into a marketing opportunity that builds brand recognition.'
+        },
+        {
+          title: 'Food-Safe Materials',
+          description: 'FDA-approved paperboard and bamboo with safe inks ensure customer health while providing durable, moisture-resistant packaging.'
+        },
+        {
+          title: 'Eco-Friendly Options',
+          description: 'Sustainable bamboo, kraft paper, and recyclable materials with soy-based inks appeal to environmentally-conscious customers.'
+        },
+        {
+          title: 'Versatile Sizing',
+          description: 'Custom sizes accommodate everything from sliders to double-stacked burgers, plus combo boxes for fries and sides.'
+        }
+      ],
+      learnMore: {
+        title: 'Learn More About Burger Boxes',
+        sections: [
+          {
+            heading: 'Burger Boxes That Keep Food Fresh & Brands Memorable',
+            content: 'In the competitive fast-food industry, packaging quality directly impacts customer satisfaction and repeat business. Our burger boxes use grease-resistant coatings and insulated materials to maintain food quality during delivery, ensuring burgers arrive hot, fresh, and appetizing.'
+          },
+          {
+            content: 'At Half Price Packaging, we create burger boxes using food-safe paperboard and sustainable bamboo materials. Our grease-resistant barriers prevent leaks and maintain structural integrity, while heat-retaining construction keeps food at optimal temperature. Every box is designed for both functionality and brand impact.'
+          },
+          {
+            heading: 'Turn Every Delivery Into a Branding Opportunity',
+            content: 'Custom burger boxes do more than transport food—they build brand recognition with every order. Vibrant logos, appetizing imagery, and consistent branding create memorable impressions that encourage customers to return and recommend your restaurant to others.'
+          },
+          {
+            content: 'Our design team helps restaurants create burger boxes that reflect brand personality and appeal to target customers. From minimalist kraft designs to bold, colorful graphics, we ensure your packaging stands out in the crowded takeout market while maintaining food safety and freshness.'
+          },
+          {
+            heading: 'Perfect for All Food Service Operations',
+            content: 'Our burger boxes serve diverse restaurant and food service needs.',
+            list: [
+              'Fast-food restaurants and chains',
+              'Food trucks and mobile vendors',
+              'Delivery-only cloud kitchens',
+              'Catering services and events',
+              'Gourmet burger establishments'
+            ]
+          },
+          {
+            heading: 'Sustainable Packaging for Eco-Conscious Brands',
+            content: 'We offer eco-friendly burger boxes made from recyclable paperboard, sustainable bamboo, and kraft materials. Soy-based and water-based inks ensure vibrant printing without environmental harm. Our sustainable options appeal to environmentally-conscious customers while reducing your carbon footprint and supporting green business practices.'
+          }
+        ]
+      }
+    },
   learnMoreSection: {
     title: 'Learn More About Burger Boxes',
     subtitle: 'Keep Food Fresh, Hot & Appealing From Kitchen To Customer',

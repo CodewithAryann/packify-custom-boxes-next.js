@@ -1,3 +1,4 @@
+
 'use client'
 
 import { useState } from 'react'
@@ -63,15 +64,6 @@ export default function ProductVariantPage({ params }: Props) {
               <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
                 {variant.name}
               </h1>
-              {/* <div className="flex items-center gap-4 text-sm text-gray-600">
-                <div className="flex items-center gap-1">
-                  <svg className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                  <span className="font-medium">4.9/5</span>
-                  <span className="text-gray-400">(2.1k reviews)</span>
-                </div>
-              </div> */}
             </div>
 
             {/* Product Image */}
@@ -161,6 +153,11 @@ export default function ProductVariantPage({ params }: Props) {
           </section>
         </div>
       </main>
+
+      {/* PRODUCT OVERVIEW SECTION - After Quote */}
+      {product.productOverview && (
+        <ProductOverviewSection data={product.productOverview} />
+      )}
 
       {/* ENHANCED LEARN MORE SECTION */}
       {product.learnMoreSection && (
@@ -299,6 +296,107 @@ export default function ProductVariantPage({ params }: Props) {
 }
 
 /* =========================
+   PRODUCT OVERVIEW SECTION
+========================= */
+function ProductOverviewSection({ data }: { data: any }) {
+  if (!data) return null
+
+  const { title, description, bullets, learnMore } = data
+
+  return (
+    <section className="relative max-w-7xl mx-auto px-6 py-16">
+      <div className="bg-gradient-to-br from-white to-orange-50/30 rounded-3xl shadow-xl border-2 border-orange-100/50 p-10 md:p-12">
+        
+        {/* Header */}
+        {title && (
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+              {title}
+            </h2>
+            {description && (
+              <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+                {description}
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* Bullet Points Grid */}
+        {bullets && bullets.length > 0 && (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+            {bullets.map((bullet: any, i: number) => (
+              <div
+                key={i}
+                className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-orange-300"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-800 mb-2 group-hover:text-orange-600 transition-colors">
+                      {bullet.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {bullet.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Learn More Content Card */}
+        {learnMore && (
+          <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-200">
+            {learnMore.title && (
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <div className="w-2 h-8 bg-gradient-to-b from-orange-500 to-orange-600 rounded-full" />
+                {learnMore.title}
+              </h3>
+            )}
+            
+            {learnMore.sections && learnMore.sections.length > 0 && (
+              <div className="space-y-6">
+                {learnMore.sections.map((section: any, idx: number) => (
+                  <div key={idx}>
+                    {section.heading && (
+                      <h4 className="text-xl font-bold text-gray-800 mb-3">
+                        {section.heading}
+                      </h4>
+                    )}
+                    {section.content && (
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        {section.content}
+                      </p>
+                    )}
+                    {section.list && section.list.length > 0 && (
+                      <ul className="space-y-2 ml-6">
+                        {section.list.map((item: string, i: number) => (
+                          <li key={i} className="flex items-start gap-3 text-gray-700">
+                            <svg className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                            </svg>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+    </section>
+  )
+}
+
+/* =========================
    ENHANCED LEARN MORE SECTION
 ========================= */
 function EnhancedLearnMoreSection({ data, productSlug }: { data: any; productSlug: string }) {
@@ -306,10 +404,7 @@ function EnhancedLearnMoreSection({ data, productSlug }: { data: any; productSlu
 
   if (!data) return null
 
-  const sections = data.sections ?? []
-  const highlights = data.highlights ?? []
   const features = data.features ?? []
-  const materials = data.materials ?? []
   const faqs = data.faqs ?? []
   const cta = data.cta ?? {}
 
@@ -343,7 +438,7 @@ function EnhancedLearnMoreSection({ data, productSlug }: { data: any; productSlu
           </div>
         )}
 
-        {/* Feature Cards with Icons */}
+        {/* Feature Cards with Icons - Keep these 3 cards */}
         {features.length > 0 && (
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature: any, i: number) => (
@@ -366,86 +461,6 @@ function EnhancedLearnMoreSection({ data, productSlug }: { data: any; productSlu
                     {feature.description}
                   </p>
                 </div>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Content Sections with Visual Enhancements */}
-        {sections.length > 0 && (
-          <div className="grid md:grid-cols-2 gap-8">
-            {sections.map((sec: any, i: number) => (
-              <div
-                key={i}
-                className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
-              >
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl flex items-center justify-center">
-                    <span className="text-2xl font-bold text-orange-600">{i + 1}</span>
-                  </div>
-                  {sec.heading && (
-                    <h3 className="text-2xl font-bold text-gray-800 pt-2">
-                      {sec.heading}
-                    </h3>
-                  )}
-                </div>
-                {Array.isArray(sec.content) && (
-                  <ul className="space-y-3">
-                    {sec.content.map((line: string, idx: number) => (
-                      <li key={idx} className="flex items-start gap-3 text-gray-700">
-                        <svg className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                        </svg>
-                        <span>{line}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Materials Showcase */}
-        {materials.length > 0 && (
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-10 rounded-3xl shadow-2xl text-white">
-            <div className="flex items-center gap-4 mb-8">
-              <div className="p-3 bg-white/10 rounded-xl">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                </svg>
-              </div>
-              <h3 className="text-3xl font-bold">Premium Materials & Specifications</h3>
-            </div>
-            <div className="grid md:grid-cols-2 gap-6">
-              {materials.map((material: any, i: number) => (
-                <div key={i} className="bg-white/5 backdrop-blur p-6 rounded-2xl border border-white/10">
-                  <div className="text-orange-400 font-bold text-sm uppercase tracking-wider mb-2">
-                    {material.label}
-                  </div>
-                  <div className="text-white/90 leading-relaxed">
-                    {material.value}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Highlights Grid */}
-        {highlights.length > 0 && (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {highlights.map((h: string, i: number) => (
-              <div
-                key={i}
-                className="group bg-white p-6 text-center rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-orange-300"
-              >
-                <div className="w-12 h-12 mx-auto mb-4 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <svg className="w-6 h-6 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <p className="font-semibold text-gray-800">{h}</p>
               </div>
             ))}
           </div>
@@ -563,7 +578,6 @@ function EnhancedLearnMoreSection({ data, productSlug }: { data: any; productSlu
 
 /* =========================
    ENHANCED CAPABILITIES SECTION
-   (Keeping the previous enhanced version)
 ========================= */
 function CapabilitiesSection({ data }: { data: any }) {
   if (!data) return null
@@ -613,7 +627,6 @@ function CapabilitiesSection({ data }: { data: any }) {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
         </svg>
       ),
-      // Additional common variations
       'Fast Turnaround': (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
