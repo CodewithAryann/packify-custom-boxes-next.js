@@ -10,8 +10,8 @@ const navLinks = [
   { name: 'Products', href: '#boxes' },
   // { name: 'Why Choose Us', href: '#choose' },
   { name: 'How it Works', href: '#it-works' },
-  { name: 'Blog', href: '/get-quote' },
-  { name: 'Request a Quote', href: '#quote' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'Request a Quote', href: '/get-quote' },
 ]
 
 const boxTypes = [
@@ -60,14 +60,25 @@ export default function Header() {
     <header className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-md text-white shadow-md transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between lg:px-[64px] lg:py-[18px]">
         {/* Logo */}
-        <div
-          className="text-xl sm:text-2xl font-bold cursor-pointer select-none"
-          onClick={() => handleNavClick('/')}
-          role="link"
-          aria-label="Go to homepage"
-        >
-          Packify<span className="text-orange-500">CustomBoxes</span>
-        </div>
+       <div
+  className="flex items-center gap-2 cursor-pointer select-none"
+  onClick={() => handleNavClick('/')}
+  role="link"
+  aria-label="Go to homepage"
+>
+  {/* Logo Image */}
+  <img
+    src="/images/navbar-logo.png"   
+    alt="Packify CustomBoxes Logo"
+    className="w-10 h-10 object-contain"
+  />
+
+  {/* Text */}
+  <div className="text-xl sm:text-2xl font-bold">
+    Packify<span className="text-orange-500">CustomBoxes</span>
+  </div>
+</div>
+
 
         {/* Hamburger Button */}
         <button

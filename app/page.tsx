@@ -29,7 +29,7 @@ export default function Home() {
       <QuoteForm />
       <Testimonials />
       <BlogPreview />
-      <PromoBanner/>      
+      {/* <PromoBanner/>       */}
     </>
   )
 }
