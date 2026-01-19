@@ -1,4 +1,4 @@
-'use client'
+
 
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
@@ -7,6 +7,7 @@ import ProductTabs from '@/components/ProductTabs'
 import ProductQuoteForm from '@/components/ProductQuoteForm'
 import ProductOverview from '@/components/ProductOverview'
 import ProductInserts from '@/components/ProductInserts'
+import ProductSeoSection from '@/components/ProductSeoSection'
 import { productsData } from '@/lib/products-data'
 
 type Props = {
@@ -42,6 +43,8 @@ export default function ProductPage({ params }: Props) {
         </nav>
       </div>
 
+      
+
       {/* Hero Product Detail Section */}
       {'learnMoreSection' in product && 'capabilitiesSection' in product && 'customization' in product ? (
         <main className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-12 mb-12 bg-white rounded-3xl shadow-2xl border border-gray-100">
@@ -57,6 +60,8 @@ export default function ProductPage({ params }: Props) {
           </div>
         </main>
       )}
+      {/* SEO Content Section */}
+      <ProductSeoSection productSlug={params.slug} />
 
       {/* Product Inserts Section */}
       {params.slug === 'mailer-boxes' && (
@@ -213,30 +218,6 @@ export default function ProductPage({ params }: Props) {
       {'learnMoreSection' in product && 'capabilitiesSection' in product && 'customization' in product && (
         <ProductOverview product={product} />
       )}
-
-      {/* Trust Indicators Section
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-            <div className="space-y-2">
-              <div className="text-4xl font-extrabold text-orange-400">24/7</div>
-              <div className="text-sm text-gray-300">Customer Support</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-4xl font-extrabold text-orange-400">100+</div>
-              <div className="text-sm text-gray-300">Custom Options</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-4xl font-extrabold text-orange-400">Fast</div>
-              <div className="text-sm text-gray-300">Turnaround Time</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-4xl font-extrabold text-orange-400">Low</div>
-              <div className="text-sm text-gray-300">Minimum Orders</div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </div>
   )
 }

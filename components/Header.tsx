@@ -6,10 +6,11 @@ import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '#about' },
-  { name: 'Types of Boxes', href: '#boxes' },
+  // { name: 'Products', href: '#Products' },
+  { name: 'Products', href: '#boxes' },
   // { name: 'Why Choose Us', href: '#choose' },
   { name: 'How it Works', href: '#it-works' },
-  // { name: 'FAQ', href: '#faqs' },
+  { name: 'Blog', href: '/get-quote' },
   { name: 'Request a Quote', href: '#quote' },
 ]
 
@@ -94,7 +95,7 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex gap-6 items-center font-medium">
           {navLinks.map((link) =>
-            link.name === 'Types of Boxes' ? (
+            link.name === 'Products' ? (
               <div key={link.name} className="group relative">
                 <button className="flex items-center gap-1 hover:text-orange-400 transition">
                   {link.name}

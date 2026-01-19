@@ -9,7 +9,7 @@ interface ProductDetailProps {
 
 export default function ProductDetail({ product }: ProductDetailProps) {
   return (
-    <section className="col-span-1">
+    <section className="Products col-span-1">
       <h1 className="text-4xl font-extrabold mb-6 text-orange-600">
         {product.title}
       </h1>

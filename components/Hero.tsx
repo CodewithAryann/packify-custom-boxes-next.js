@@ -34,7 +34,7 @@ export default function Hero() {
         </div>
 
         {/* Right Media Block */}
-        <div className="relative w-full h-full flex items-center justify-center px-6 py-10 hidden md:flex">
+        <div className="relative w-full h-full flex items-center justify-center px-6 py-10 md:flex">
           <video
             src="/videos/1754748684485.mp4"
             poster="/images/hero-200.webp"
@@ -48,5 +48,7 @@ export default function Hero() {
         </div>
       </div>
     </section>
+
+    
   )
 }
