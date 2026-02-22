@@ -101,7 +101,7 @@ export default function ProductVariantPage({ params }: Props) {
             </div>
 
             {/* Enhanced Key Features */}
-            {Array.isArray(product.features) && product.features.length > 0 && (
+            {product.features?.length > 0 && (
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
                   <div className="p-2 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg">
@@ -181,7 +181,7 @@ export default function ProductVariantPage({ params }: Props) {
       )}
 
       {/* ENHANCED RELATED VARIANTS */}
-      {Array.isArray(product.variants) && product.variants.length > 1 && (
+      {product.variants.length > 1 && (
         <section className="relative max-w-7xl mx-auto px-6 py-20 overflow-hidden">
 
           {/* Background Decoration */}
@@ -313,6 +313,8 @@ export default function ProductVariantPage({ params }: Props) {
 
 /* =========================
    PRODUCT OVERVIEW SECTION
+   hideLearnMore: when true, suppresses the learnMore block so that
+   the EnhancedLearnMoreSection below can render variant-specific content.
 ========================= */
 function ProductOverviewSection({
   data,
@@ -329,6 +331,7 @@ function ProductOverviewSection({
     <section className="relative max-w-7xl mx-auto px-6 py-16">
       <div className="bg-gradient-to-br from-white to-orange-50/30 rounded-3xl shadow-xl border-2 border-orange-100/50 p-10 md:p-12">
 
+        {/* Header */}
         {title && (
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
@@ -342,7 +345,8 @@ function ProductOverviewSection({
           </div>
         )}
 
-        {Array.isArray(bullets) && bullets.length > 0 && (
+        {/* Bullet Points Grid */}
+        {bullets && bullets.length > 0 && (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {bullets.map((bullet: any, i: number) => (
               <div
@@ -369,6 +373,9 @@ function ProductOverviewSection({
           </div>
         )}
 
+        {/* Learn More Content Card
+            Only rendered when hideLearnMore is false (i.e. on the main product page).
+            On variant pages this is hidden so EnhancedLearnMoreSection takes over. */}
         {!hideLearnMore && learnMore && (
           <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-200">
             {learnMore.title && (
@@ -378,7 +385,7 @@ function ProductOverviewSection({
               </h3>
             )}
 
-            {Array.isArray(learnMore.sections) && learnMore.sections.length > 0 && (
+            {learnMore.sections && learnMore.sections.length > 0 && (
               <div className="space-y-6">
                 {learnMore.sections.map((section: any, idx: number) => (
                   <div key={idx}>
@@ -392,7 +399,7 @@ function ProductOverviewSection({
                         {section.content}
                       </p>
                     )}
-                    {Array.isArray(section.list) && section.list.length > 0 && (
+                    {section.list && section.list.length > 0 && (
                       <ul className="space-y-2 ml-6">
                         {section.list.map((item: string, i: number) => (
                           <li key={i} className="flex items-start gap-3 text-gray-700">
@@ -423,18 +430,20 @@ function EnhancedLearnMoreSection({ data, productSlug }: { data: any; productSlu
 
   if (!data) return null
 
-  const features = Array.isArray(data.features) ? data.features : []
-  const faqs = Array.isArray(data.faqs) ? data.faqs : []
+  const features = data.features ?? []
+  const faqs = data.faqs ?? []
   const cta = data.cta ?? {}
 
   return (
     <section className="relative bg-gradient-to-b from-[#fef8f0] via-white to-[#fef8f0] py-20 overflow-hidden mt-8">
 
+      {/* Decorative Background Elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-orange-100 rounded-full blur-3xl opacity-30 -translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-100 rounded-full blur-3xl opacity-30 translate-x-1/2 translate-y-1/2" />
 
       <div className="relative max-w-7xl mx-auto px-6 space-y-20">
 
+        {/* Hero Header with Icon */}
         {(data.title || data.subtitle) && (
           <div className="text-center max-w-4xl mx-auto space-y-6">
             <div className="inline-block p-4 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl shadow-xl mb-4">
@@ -455,6 +464,7 @@ function EnhancedLearnMoreSection({ data, productSlug }: { data: any; productSlu
           </div>
         )}
 
+        {/* Feature Cards */}
         {features.length > 0 && (
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature: any, i: number) => (
@@ -482,6 +492,7 @@ function EnhancedLearnMoreSection({ data, productSlug }: { data: any; productSlu
           </div>
         )}
 
+        {/* FAQ Accordion */}
         {faqs.length > 0 && (
           <div className="bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
             <div className="flex items-center gap-4 mb-8">
@@ -522,8 +533,10 @@ function EnhancedLearnMoreSection({ data, productSlug }: { data: any; productSlu
           </div>
         )}
 
+        {/* Enhanced CTA Section */}
         {(cta.title || cta.subtitle) && (
           <div className="relative bg-gradient-to-br from-orange-600 via-orange-500 to-orange-600 p-12 rounded-3xl shadow-2xl overflow-hidden">
+            {/* Decorative Elements */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
 
@@ -598,7 +611,7 @@ function CapabilitiesSection({ data }: { data: any }) {
   const items = Array.isArray(data.items) ? data.items : []
   if (!items.length) return null
 
-  const getCapabilityIcon = (label: string): JSX.Element => {
+  const getCapabilityIcon = (label: string) => {
     const iconMap: Record<string, JSX.Element> = {
       'Global Sourcing': (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -737,7 +750,7 @@ function CapabilitiesSection({ data }: { data: any }) {
       ),
     }
 
-    return iconMap[label] ?? (
+    return iconMap[label] || (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
       </svg>
@@ -789,7 +802,7 @@ function CapabilitiesSection({ data }: { data: any }) {
                 <div className="mb-6 relative">
                   <div className="w-20 h-20 mx-auto bg-gradient-to-br from-orange-100 via-orange-200 to-orange-300 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg group-hover:shadow-xl">
                     <div className="text-orange-600 group-hover:text-orange-700 transition-colors">
-                      {getCapabilityIcon(item.label ?? '')}
+                      {getCapabilityIcon(item.label || '')}
                     </div>
                   </div>
                   <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -852,5 +865,5 @@ function getFeatureIcon(feature: string): string {
     'Design Support': 'paint-palette',
     'Free Shipping': 'delivery',
   }
-  return map[feature] ?? 'clock'
+  return map[feature] || 'clock'
 }
