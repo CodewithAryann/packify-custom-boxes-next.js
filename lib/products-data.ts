@@ -2138,59 +2138,320 @@ Dispenser boxes are used for a wide range of products, including candy, hygiene 
     overviewImage: '/images/Rigid Kraft Box.webp',
     overviewHoverImage: '/images/Die Cut Rigid Box.webp',
   },
-
   'magnetic-closure': {
     title: 'Magnetic Closure Boxes',
-    heading: 'Learn More About Magnetic Closure Boxes',
-    subtitle: 'Elegant, Secure & Reusable Premium Packaging That Impresses',
-    features: [
-      { title: 'Smooth Magnetic Closure', description: 'Built-in magnets provide effortless opening and closing with a satisfying, premium snap.' },
-      { title: 'Luxury Presentation', description: 'Premium materials and finishes create unforgettable unboxing experiences that delight customers.' },
-      { title: 'Reusable Design', description: 'Durable construction encourages customers to keep and reuse boxes, extending brand exposure.' }
-    ],
-    selection: [
-      { heading: 'Perfect for Luxury Products', content: ['Magnetic closure boxes combine functionality with premium presentation for high-end brands.', 'Built-in neodymium magnets create a smooth, satisfying opening experience.', 'Ideal for jewelry, cosmetics, electronics, luxury gifts, and premium products.', 'Reusable design means customers keep boxes for storage, providing ongoing brand visibility.'] },
-      { heading: 'Customization for Every Brand', content: ['Choose from various finishes: soft-touch, linen, leather, or textured materials.', 'Add foil stamping in gold, silver, rose gold, or custom colors for elegant branding.', 'Embossing and debossing for dimensional, tactile branding elements.', 'Custom inserts, ribbon pulls, and satin linings elevate the unboxing experience.'] }
-    ],
-    materials: [
-      { label: 'Base Material', value: 'Rigid chipboard (1200-1800 GSM), Premium cardboard' },
-      { label: 'Closure', value: 'Embedded neodymium magnets for secure closure' },
-      { label: 'Exterior', value: 'Art paper, Textured paper, Fabric, Leather wrapping' },
-      { label: 'Interior', value: 'Satin lining, Velvet, Foam inserts, Custom trays' },
-      { label: 'Finishes', value: 'Soft-touch, Foil stamping, Embossing, Spot UV' }
-    ],
-    highlight: ['Smooth magnetic closure', 'Premium, luxury feel', 'Fully customizable', 'Reusable and durable'],
-    faqs: [
-      { question: 'How strong are the magnets?', answer: 'We use premium neodymium magnets that provide secure closure while remaining easy to open. The strength can be customized based on box size and product weight for optimal functionality.' },
-      { question: 'What products are magnetic boxes best for?', answer: 'Magnetic closure boxes are perfect for jewelry, watches, high-end cosmetics, electronics, luxury gifts, premium apparel, and any product requiring elegant presentation and reusable packaging.' },
-      { question: 'Can I add custom inserts?', answer: 'Yes! We offer foam inserts, velvet trays, ribbon pulls, and custom-molded compartments to securely display and protect your products with elegant presentation.' },
-      { question: 'Are these boxes reusable?', answer: "Absolutely! The durable construction and magnetic closure make these boxes perfect for long-term storage, extending your brand's visibility and creating lasting customer relationships." }
-    ],
-    cta: { heading: 'Create Magnetic Closure Boxes That Wow!', subtitle: 'Luxury packaging with smooth magnetic closures. Impress customers with every unboxing experience and build lasting brand loyalty.' },
-    capabilities: {
-      heading: 'Our Capabilities',
-      items: [
-        { label: 'Premium Materials', value: 'Luxury finishes' },
-        { label: 'Custom Magnets', value: 'Secure closure' },
-        { label: 'Expert Team', value: 'Design support' },
-        { label: 'Quality Assurance', value: 'Perfect quality' },
-        { label: 'Free Samples', value: 'Quality check' },
-        { label: 'Custom Sizing', value: 'Any dimension' },
-        { label: 'Low MOQ', value: 'From 100 units' },
-        { label: 'Free Shipping', value: 'USA delivery' }
-      ]
-    },
     slug: 'magnetic-closure',
     metaDescription: 'Premium magnetic closure boxes for luxury products and gifts. Elegant design with secure magnetic flap.',
     keywords: ['magnetic closure boxes', 'luxury gift boxes', 'premium packaging'],
     mainImage: '/images/WhatsApp_Image_2025-08-05_at_3.37.56_AM-removebg-preview.webp',
     hoverImage: '/images/WhatsApp_Image_2025-08-05_at_3.37.56_AM__1_-removebg-preview.webp',
     description: 'Premium unboxing experience with their sleek design and secure magnetic flap. Ideal for luxury products and gifts, they combine elegance with functionality.',
+    features: ['Fast Turnaround', 'Full Color Printing', 'Design Support', 'Free Shipping'],
     overviewTitle: 'Product Overview',
     overviewContent: 'Our magnetic closure boxes are crafted from premium rigid chipboard and wrapped in luxury materials to deliver a packaging experience worthy of your most premium products. The embedded neodymium magnets provide a smooth, satisfying closure that functions flawlessly and lasts for years of repeated use.',
     overviewImage: '/images/cosmetic lables.webp',
     overviewHoverImage: '/images/cosmetic display box.webp',
+    customization: {},
+    faqs: false,
+
+    productOverview: {
+      title: 'Product Overview',
+      description: 'Our magnetic closure boxes are crafted from premium rigid chipboard and wrapped in luxury materials to deliver a packaging experience worthy of your most premium products. The embedded neodymium magnets provide a smooth, satisfying closure that functions flawlessly and lasts for years of repeated use.',
+      bullets: [
+        {
+          title: 'Smooth Magnetic Closure',
+          description: 'Premium neodymium magnets calibrated for secure yet effortless opening — a satisfying snap that signals quality with every use.'
+        },
+        {
+          title: 'Rigid Chipboard Base',
+          description: 'Thick 1200–1800 GSM chipboard maintains perfect shape permanently, protecting contents and projecting premium brand values.'
+        },
+        {
+          title: 'Luxury Exterior Finishes',
+          description: 'Soft-touch lamination, linen textures, leather wrapping, foil stamping, embossing, and spot UV all available to match your brand aesthetic.'
+        },
+        {
+          title: 'Premium Interior Options',
+          description: 'Satin lining, velvet fabric, custom foam inserts, and ribbon pulls create an unboxing experience your customers will remember and share.'
+        },
+        {
+          title: 'Reusable Keepsake Design',
+          description: 'Durable construction encourages customers to keep and reuse boxes for storage, extending brand visibility indefinitely beyond the initial purchase.'
+        },
+        {
+          title: 'Fully Customizable',
+          description: 'Any size, any finish, any closure strength — engineered precisely to your product and brand requirements with no limitations.'
+        }
+      ],
+      learnMore: {
+        title: 'Learn More About Magnetic Closure Boxes',
+        sections: [
+          {
+            heading: 'Magnetic Closure Boxes for Luxury Brands & Premium Products',
+            content: 'Magnetic closure boxes set the gold standard for luxury unboxing experiences. The smooth, satisfying magnetic snap signals premium quality the moment a customer holds the box — before they even see the product inside. For brands competing in high-end markets, this first impression is invaluable and impossible to replicate with standard packaging.'
+          },
+          {
+            content: 'At Packify Custom Boxes, we craft magnetic closure boxes using thick chipboard bases wrapped in premium materials including art paper, textured finishes, fabric, and leather. Every detail — from magnet strength to lid depth to interior lining color — is engineered for your specific product and brand identity.'
+          },
+          {
+            heading: 'Elevate Your Brand with Sophisticated Magnetic Packaging',
+            content: 'Magnetic closure boxes offer endless customization possibilities for luxury branding. Add ribbon pulls for an elegant opening gesture, custom foam inserts for secure product presentation, or satin linings for a jewel-box feel. Foil stamping in metallic colors adds prestige, while soft-touch lamination creates a tactile premium quality customers love.'
+          },
+          {
+            heading: 'Perfect for Premium Products Across Every Category',
+            content: 'Magnetic closure boxes are the packaging choice for luxury goods across multiple industries.',
+            list: [
+              'Fine jewelry and luxury watches',
+              'Premium cosmetics and skincare gift sets',
+              'High-end electronics and tech accessories',
+              'Corporate gifts and executive welcome kits',
+              'Designer accessories and fashion items'
+            ]
+          }
+        ]
+      }
+    },
+
+    learnMoreSection: {
+      title: 'Learn More About Magnetic Closure Boxes',
+      subtitle: 'Elegant, Secure & Reusable Premium Packaging That Impresses Every Time',
+      features: [
+        {
+          title: 'Smooth Magnetic Closure',
+          description: 'Built-in neodymium magnets provide effortless opening and closing with a satisfying, premium snap that signals quality instantly.'
+        },
+        {
+          title: 'Luxury Presentation',
+          description: 'Premium materials and finishes create unforgettable unboxing experiences that delight customers and build lasting brand loyalty.'
+        },
+        {
+          title: 'Reusable Design',
+          description: 'Durable construction encourages customers to keep and reuse boxes for storage, extending brand exposure far beyond the initial purchase.'
+        }
+      ],
+      faqs: [
+        {
+          question: 'How strong are the magnets in magnetic closure boxes?',
+          answer: 'We use premium neodymium magnets calibrated to provide secure closure proportionate to the box size and product weight. The magnets hold firmly during transport while remaining easy and smooth to open — the perfect balance of security and elegance.'
+        },
+        {
+          question: 'What products are magnetic closure boxes best for?',
+          answer: 'Magnetic closure boxes are perfect for jewelry, watches, high-end cosmetics, electronics, luxury gifts, premium apparel, corporate gifts, and any product that benefits from an elegant, memorable unboxing experience that customers associate with premium quality.'
+        },
+        {
+          question: 'Can I add custom inserts to magnetic closure boxes?',
+          answer: 'Yes! We offer foam inserts, velvet trays, custom-molded compartments, ribbon pulls, and satin linings to securely present and protect your products with the elegance they deserve.'
+        },
+        {
+          question: 'Are magnetic closure boxes reusable?',
+          answer: 'Absolutely! The durable rigid construction and premium magnetic closure make these boxes perfect for long-term storage. Customers love keeping them, which extends your brand visibility and creates lasting relationships with your products.'
+        }
+      ],
+      cta: {
+        title: 'Create Magnetic Closure Boxes That Wow!',
+        subtitle: 'Luxury packaging with smooth magnetic closures. Impress customers with every unboxing experience and build lasting brand loyalty.'
+      }
+    },
+
+    capabilitiesSection: {
+      title: 'Our Capabilities',
+      items: [
+        { label: 'Premium Materials', value: 'Luxury finishes' },
+        { label: 'Custom Magnets', value: 'Secure closure' },
+        { label: 'Expert Team', value: 'Design support' },
+        { label: 'Quality Assurance', value: 'Perfect quality' },
+        { label: 'Free Samples', value: 'Before ordering' },
+        { label: 'Custom Sizing', value: 'Any dimension' },
+        { label: 'Low MOQ', value: 'From 100 units' },
+        { label: 'Free Shipping', value: 'USA delivery' }
+      ]
+    },
+
+    // variants: [
+    //   {
+    //     name: 'Two Piece Magnetic Box',
+    //     image: '/images/magentic rigid box.webp',
+    //     description: 'The classic two piece magnetic closure box features a separate lid and base held together by embedded neodymium magnets. Perfect for jewelry, watches, cosmetics, and premium gifts — the smooth magnetic snap creates an instant premium impression.',
+    //     learnMoreSection: {
+    //       title: 'Learn More About Two Piece Magnetic Boxes',
+    //       subtitle: 'Classic Lid & Base Construction With a Smooth, Satisfying Magnetic Snap',
+    //       features: [
+    //         {
+    //           title: 'Separate Lid & Base',
+    //           description: 'The classic two-piece format is universally recognized as premium packaging — timeless, elegant, and immediately associated with luxury products worldwide.'
+    //         },
+    //         {
+    //           title: 'Smooth Magnetic Closure',
+    //           description: 'Embedded neodymium magnets in both lid and base create a perfectly aligned, satisfying closure with just the right amount of resistance.'
+    //         },
+    //         {
+    //           title: 'Maximum Customization',
+    //           description: 'Full exterior and interior customization with any finish, lining, insert, or foil detail to create completely bespoke luxury packaging.'
+    //         }
+    //       ],
+    //       faqs: [
+    //         {
+    //           question: 'How precise is the lid-to-base alignment?',
+    //           answer: 'We engineer magnetic closure boxes with precision magnet placement that ensures the lid aligns perfectly every time it is closed, creating a seamless, professional appearance from every angle.'
+    //         },
+    //         {
+    //           question: 'Can the lid and base have different finishes?',
+    //           answer: 'Yes! Many luxury brands use contrasting finishes — for example, a matte black exterior with a gold foil interior lid lining — to create a visual reveal that surprises and delights recipients.'
+    //         },
+    //         {
+    //           question: 'What interior options are available?',
+    //           answer: 'Satin lining, velvet fabric, custom foam inserts, EVA foam with custom cutouts, ribbon pulls, and molded plastic trays are all available to present your product elegantly and securely.'
+    //         },
+    //         {
+    //           question: 'What is the minimum order for two piece magnetic boxes?',
+    //           answer: 'Our minimum order starts at 100 units, with significant per-unit savings at higher volumes. Contact us for custom pricing on bulk orders.'
+    //         }
+    //       ],
+    //       cta: {
+    //         title: 'Order Custom Two Piece Magnetic Closure Boxes!',
+    //         subtitle: 'Timeless luxury format meets modern magnetic precision — packaging your customers will never want to throw away.'
+    //       }
+    //     }
+    //   },
+    //   {
+    //     name: 'Magnetic Flip Box',
+    //     image: '/images/magentic rigid box.webp',
+    //     description: 'The magnetic flip box features a hinged lid that opens smoothly and closes with a satisfying magnetic snap. This one-piece construction offers both convenience and premium presentation, making it ideal for cosmetics, tech accessories, and luxury retail.',
+    //     learnMoreSection: {
+    //       title: 'Learn More About Magnetic Flip Boxes',
+    //       subtitle: 'Hinged One-Piece Construction With Magnetic Closure for Ultimate Convenience',
+    //       features: [
+    //         {
+    //           title: 'Hinged Lid With Magnetic Snap',
+    //           description: 'The hinged lid stays attached to the base and closes magnetically, combining the convenience of a flip-top with the security of a magnetic closure.'
+    //         },
+    //         {
+    //           title: 'One-Piece Construction',
+    //           description: 'Single-piece construction means the lid is never separated from the base, making it ideal for products that are accessed and reclosed frequently.'
+    //         },
+    //         {
+    //           title: 'Premium Retail Presence',
+    //           description: 'The sleek, modern aesthetic of a magnetic flip box communicates premium quality in retail display cases and on store shelves.'
+    //         }
+    //       ],
+    //       faqs: [
+    //         {
+    //           question: 'How durable is the hinge on a magnetic flip box?',
+    //           answer: 'We engineer hinges to withstand thousands of open-close cycles without weakening or creasing — ideal for products used or displayed repeatedly by end consumers.'
+    //         },
+    //         {
+    //           question: 'Can magnetic flip boxes include foam inserts?',
+    //           answer: 'Yes — custom foam or velvet inserts are available to securely hold your product in perfect position when the box is opened.'
+    //         },
+    //         {
+    //           question: 'Are magnetic flip boxes suitable for retail counter display?',
+    //           answer: 'Absolutely — the upright display position of an open magnetic flip box showcases your product beautifully on retail counters and in display cases.'
+    //         },
+    //         {
+    //           question: 'What sizes are available?',
+    //           answer: 'We custom-manufacture magnetic flip boxes in any size from small earring boxes to large gift set boxes. Provide your product dimensions for a perfect-fitting box.'
+    //         }
+    //       ],
+    //       cta: {
+    //         title: 'Order Custom Magnetic Flip Boxes Today!',
+    //         subtitle: 'One-piece hinged convenience meets luxury magnetic closure — the modern premium packaging solution for retail and gifting.'
+    //       }
+    //     }
+    //   },
+    //   {
+    //     name: 'Magnetic Drawer Box',
+    //     image: '/images/magentic rigid box.webp',
+    //     description: 'The magnetic drawer box combines a sliding drawer mechanism with magnetic closure for a unique, tactile unboxing experience. The outer shell holds magnetically while the inner drawer slides smoothly — perfect for cosmetics, tech, and premium gifts.',
+    //     learnMoreSection: {
+    //       title: 'Learn More About Magnetic Drawer Boxes',
+    //       subtitle: 'Sliding Drawer Action With Magnetic Security — a Uniquely Memorable Unboxing',
+    //       features: [
+    //         {
+    //           title: 'Magnetic Outer Shell',
+    //           description: 'The outer shell closes magnetically to secure the drawer inside, keeping contents protected and the package looking pristine during shipping and retail display.'
+    //         },
+    //         {
+    //           title: 'Smooth Drawer Reveal',
+    //           description: 'The inner drawer slides out smoothly to reveal the product — a tactile, premium experience that differentiates your packaging from any standard box style.'
+    //         },
+    //         {
+    //           title: 'Ribbon Pull Option',
+    //           description: 'An optional ribbon pull on the inner drawer makes opening intuitive and elegant, adding a signature gesture to the unboxing ritual.'
+    //         }
+    //       ],
+    //       faqs: [
+    //         {
+    //           question: 'How does the magnetic closure work with the drawer?',
+    //           answer: 'The outer sleeve has embedded magnets that hold the drawer closed during transit. The drawer slides freely once the magnetic hold is released with a gentle pull, creating a controlled, premium reveal experience.'
+    //         },
+    //         {
+    //           question: 'What products are magnetic drawer boxes best for?',
+    //           answer: 'Jewelry sets, luxury skincare collections, tech accessories, watches, gourmet gifts, and any product that benefits from a reveal-style opening that builds anticipation.'
+    //         },
+    //         {
+    //           question: 'Can the drawer compartment include inserts?',
+    //           answer: 'Yes — custom foam cutouts, velvet pads, cardboard dividers, and satin linings are all available inside the drawer to hold and beautifully present your products on reveal.'
+    //         },
+    //         {
+    //           question: 'What exterior finishes are available?',
+    //           answer: 'All premium rigid box finishes are available: soft-touch lamination, linen texture, leather wrapping, foil stamping, embossing, debossing, and full custom artwork printing.'
+    //         }
+    //       ],
+    //       cta: {
+    //         title: 'Create Custom Magnetic Drawer Boxes!',
+    //         subtitle: 'A reveal moment customers remember — magnetic security with smooth sliding drawer action that defines premium unboxing.'
+    //       }
+    //     }
+    //   },
+    //   {
+    //     name: 'Magnetic Gift Box',
+    //     image: '/images/magentic rigid box.webp',
+    //     description: 'Magnetic gift boxes are the ultimate in luxury gift packaging. Premium rigid construction with smooth magnetic closure, satin or velvet interior, and full custom branding create an unforgettable gifting experience that recipients treasure long after the occasion.',
+    //     learnMoreSection: {
+    //       title: 'Learn More About Magnetic Gift Boxes',
+    //       subtitle: 'The Ultimate Luxury Gift Packaging — Premium, Memorable & Reusable',
+    //       features: [
+    //         {
+    //           title: 'Gift-Ready Luxury',
+    //           description: 'Premium rigid construction, luxurious interior lining, and smooth magnetic closure create immediate gift appeal that makes recipients feel truly special before they even open the box.'
+    //         },
+    //         {
+    //           title: 'Keepsake-Quality Build',
+    //           description: 'Durable chipboard and premium materials mean recipients keep these boxes long after the gift is received, creating an ongoing brand presence in their home or office.'
+    //         },
+    //         {
+    //           title: 'Full Personalization',
+    //           description: 'Custom exterior printing, interior messaging, ribbon pulls, and premium finishes create completely bespoke gifting experiences for any occasion or recipient.'
+    //         }
+    //       ],
+    //       faqs: [
+    //         {
+    //           question: 'Are magnetic gift boxes suitable for corporate gifting programs?',
+    //           answer: 'Absolutely — magnetic gift boxes are the premium choice for corporate gifts, executive welcome kits, client appreciation packages, and high-value gifting occasions that require an impressive first impression.'
+    //         },
+    //         {
+    //           question: 'Can magnetic gift boxes include personalized messages?',
+    //           answer: 'Yes — interior lid printing, custom message cards, and personalized insert printing are all available for creating individualized gifting experiences at scale.'
+    //         },
+    //         {
+    //           question: 'What interior lining options are available?',
+    //           answer: 'Satin in multiple colors, velvet fabric, custom foam inserts, tissue paper, and molded EVA foam trays are all available to create the perfect interior presentation for your gift.'
+    //         },
+    //         {
+    //           question: 'What finishes make magnetic gift boxes look most premium?',
+    //           answer: 'Soft-touch matte lamination with gold or silver foil stamping is the classic luxury combination. Embossed logos add a tactile prestige element that truly elevates the gifting experience.'
+    //         }
+    //       ],
+    //       cta: {
+    //         title: 'Create Luxury Magnetic Gift Boxes for Every Occasion!',
+    //         subtitle: 'Make every gift unforgettable with premium magnetic closure gift boxes that recipients treasure as keepsakes forever.'
+    //       }
+    //     }
+    //   }
+    // ]
   },
+
+// ============================================================
 
   'cosmetic-boxes': {
     title: 'Cosmetic Boxes',
@@ -2199,11 +2460,128 @@ Dispenser boxes are used for a wide range of products, including candy, hygiene 
     keywords: ['custom cosmetic boxes', 'beauty packaging', 'skincare boxes', 'makeup packaging'],
     mainImage: '/images/WhatsApp_Image_2025-08-05_at_3.43.00_AM-removebg-preview.webp',
     hoverImage: '/images/WhatsApp_Image_2025-08-05_at_3.43.00_AM__1_-removebg-preview.webp',
-    description: "Enhance your brand's image while securely packaging skincare and beauty products.",
+    description: "Enhance your brand's image while securely packaging skincare and beauty products. Sleek, durable, and fully customizable to match every beauty brand's unique identity.",
+    features: ['Fast Turnaround', 'Full Color Printing', 'Design Support', 'Free Shipping'],
     overviewTitle: 'Custom Cosmetic Packaging That Highlights Every Product With Style',
-    overviewContent: 'In the beauty world, your packaging is your silent salesperson...',
+    overviewContent: 'In the beauty world, your packaging is your silent salesperson. Custom cosmetic boxes that are professionally designed and printed make a powerful statement on retail shelves and online storefronts alike.',
     overviewImage: '/images/Tuck Mailer Box.webp',
     overviewHoverImage: '/images/Book Mailer Box.webp',
+    customization: {},
+    faqs: false,
+
+    productOverview: {
+      title: 'Product Overview',
+      description: 'In the beauty world, your packaging is your silent salesperson. Our custom cosmetic boxes combine stunning design with reliable product protection to help your beauty brand stand out on shelves and online.',
+      bullets: [
+        {
+          title: 'Premium Print Quality',
+          description: 'Full-color CMYK and Pantone printing with precise color matching ensures your cosmetic packaging looks exactly as designed, every time.'
+        },
+        {
+          title: 'Luxury Finishes',
+          description: 'Soft-touch lamination, foil stamping in gold, silver, and rose gold, embossing, debossing, and spot UV elevate perceived product value instantly.'
+        },
+        {
+          title: 'Product-Safe Materials',
+          description: 'Cosmetic-grade materials with non-reactive coatings protect formulations and packaging integrity from oils, moisture, and daily handling.'
+        },
+        {
+          title: 'Retail Shelf Impact',
+          description: 'Eye-catching holographic effects, metallic finishes, and vibrant graphics create the visual magnetism needed to stand out in competitive beauty retail.'
+        },
+        {
+          title: 'Custom Sizing & Structure',
+          description: 'Precisely sized boxes for every cosmetic format — from lip balm tubes to full makeup palettes — with custom inserts for secure product presentation.'
+        },
+        {
+          title: 'Eco-Friendly Options',
+          description: 'FSC-certified board, soy-based inks, and recyclable materials available for beauty brands committed to sustainable packaging practices.'
+        }
+      ],
+      learnMore: {
+        title: 'Learn More About Cosmetic Packaging',
+        sections: [
+          {
+            heading: 'Custom Cosmetic Packaging That Sells Your Beauty Brand',
+            content: "In the beauty industry, packaging is inseparable from the product experience. Customers make purchase decisions based on how packaging looks and feels before they ever try the product inside. Our cosmetic boxes are engineered to create that instant, positive first impression that drives sales and builds brand loyalty."
+          },
+          {
+            content: 'At Packify Custom Boxes, we specialize in beauty packaging that balances visual impact with functional protection. Whether you need minimalist skincare packaging or bold, glamorous makeup boxes, our team will help you design packaging that perfectly represents your brand identity and appeals to your target customer.'
+          },
+          {
+            heading: 'Boost Sales With Impressively Designed Cosmetic Packaging',
+            content: 'Your cosmetic boxes offer prime real estate for brand communication. Vivid colors, premium finishes, and strategic design choices make products irresistible on shelves. Custom graphics, your brand story, and ingredient highlights all contribute to purchase decisions.'
+          },
+          {
+            heading: 'Perfect for Every Beauty Category',
+            content: 'Our cosmetic packaging solutions serve the full spectrum of beauty and personal care products.',
+            list: [
+              'Skincare creams, serums, and moisturizers',
+              'Makeup palettes, foundations, and color cosmetics',
+              'Lip care products and lipstick collections',
+              'Hair care and hair extension products',
+              'Beauty tool sets and brush collections'
+            ]
+          }
+        ]
+      }
+    },
+
+    learnMoreSection: {
+      title: 'Learn More About Custom Cosmetic Boxes',
+      subtitle: 'Beautiful Packaging That Elevates Your Beauty Brand & Drives Retail Sales',
+      features: [
+        {
+          title: 'Premium Aesthetics',
+          description: 'Foil stamping, embossing, soft-touch, and holographic finishes that match the luxury expectations of modern beauty consumers.'
+        },
+        {
+          title: 'Product Protection',
+          description: 'Cosmetic-grade materials protect formulations and packaging from oils, moisture, and daily retail and consumer handling.'
+        },
+        {
+          title: 'Retail Shelf Impact',
+          description: 'Eye-catching designs and premium finishes that help beauty products stand out in crowded retail and online market environments.'
+        }
+      ],
+      faqs: [
+        {
+          question: 'What cosmetic products can you create packaging for?',
+          answer: 'We create packaging for the full range of beauty products including skincare (creams, serums, moisturizers), color cosmetics (lipstick, eyeshadow, foundation), lip care, hair products, beauty tools, and complete makeup sets and gift collections.'
+        },
+        {
+          question: 'What finishes are popular for cosmetic packaging?',
+          answer: 'Soft-touch matte with foil stamping is a classic luxury combination. Rose gold and holographic foils are very popular for color cosmetics. Clean minimalist finishes work beautifully for premium skincare. We help you choose the right finish for your brand positioning.'
+        },
+        {
+          question: 'Are cosmetic-safe materials used?',
+          answer: 'Yes — all our cosmetic packaging uses non-reactive, cosmetic-grade materials with safe coatings that protect product formulations from contamination and maintain packaging integrity through daily handling.'
+        },
+        {
+          question: 'Can I get eco-friendly cosmetic packaging?',
+          answer: 'Yes! We offer FSC-certified board, soy-based inks, and recyclable materials for beauty brands committed to sustainable, environmentally-responsible packaging practices that resonate with conscious consumers.'
+        }
+      ],
+      cta: {
+        title: 'Elevate Your Beauty Brand With Custom Cosmetic Boxes!',
+        subtitle: 'Premium packaging that attracts customers, communicates quality, and builds lasting brand loyalty in the competitive beauty market.'
+      }
+    },
+
+    capabilitiesSection: {
+      title: 'Our Capabilities',
+      items: [
+        { label: 'Premium Materials', value: 'Cosmetic-grade' },
+        { label: 'Full-Color Printing', value: 'CMYK & Pantone' },
+        { label: 'Custom Sizing', value: 'Any dimension' },
+        { label: 'Fast Turnaround', value: '7-12 business days' },
+        { label: 'Low MOQ', value: 'From 100 units' },
+        { label: 'Free Samples', value: 'Quality assurance' },
+        { label: 'Free Shipping', value: 'USA-wide delivery' },
+        { label: 'Expert Support', value: 'Design assistance' }
+      ]
+    },
+
     variants: [
       {
         name: 'Makeup Boxes',
@@ -2213,15 +2591,36 @@ Dispenser boxes are used for a wide range of products, including candy, hygiene 
           title: 'Learn More About Custom Makeup Boxes',
           subtitle: 'Premium Packaging That Matches the Beauty & Luxury of Your Makeup Products',
           features: [
-            { title: 'Beauty-Forward Design', description: 'Custom graphics, color palettes, and finishes that mirror the aesthetic of your makeup line and attract your target beauty consumer.' },
-            { title: 'Product-Safe Materials', description: 'Cosmetic-grade materials with non-reactive coatings protect makeup formulations from contamination and physical damage.' },
-            { title: 'Retail Shelf Magnetism', description: 'Eye-catching finishes including holographic foil, soft-touch, and spot UV create the visual impact needed to stand out in beauty retail environments.' }
+            {
+              title: 'Beauty-Forward Design',
+              description: 'Custom graphics, color palettes, and finishes that mirror the aesthetic of your makeup line and attract your target beauty consumer at first glance.'
+            },
+            {
+              title: 'Product-Safe Materials',
+              description: 'Cosmetic-grade materials with non-reactive coatings protect makeup formulations from contamination and physical damage throughout the product lifecycle.'
+            },
+            {
+              title: 'Retail Shelf Magnetism',
+              description: 'Eye-catching finishes including holographic foil, soft-touch, and spot UV create the visual impact needed to stand out in competitive beauty retail environments.'
+            }
           ],
           faqs: [
-            { question: 'What types of makeup products can these boxes package?', answer: 'Foundations, eyeshadow palettes, blushes, highlighters, setting powders, bronzers, makeup kits, and any compact or multi-product cosmetic assortment.' },
-            { question: 'Can makeup boxes include mirror inserts?', answer: 'Yes — mirror inserts can be incorporated into custom makeup boxes for compact and palette formats, adding functional value that customers love.' },
-            { question: 'What finishes are most popular for makeup packaging?', answer: 'Rose gold foil, holographic effects, glitter lamination, and soft-touch matte are extremely popular in the makeup category for their premium, beauty-appropriate aesthetic.' },
-            { question: 'Are window cut-outs available to show product shades?', answer: 'Yes — window packaging is very effective for makeup, allowing customers to see shade ranges, product textures, and packaging color coordination at retail.' }
+            {
+              question: 'What types of makeup products can these boxes package?',
+              answer: 'Foundations, eyeshadow palettes, blushes, highlighters, setting powders, bronzers, makeup kits, and any compact or multi-product cosmetic assortment across all makeup categories.'
+            },
+            {
+              question: 'Can makeup boxes include mirror inserts?',
+              answer: 'Yes — mirror inserts can be incorporated into custom makeup boxes for compact and palette formats, adding functional value that customers love and use daily.'
+            },
+            {
+              question: 'What finishes are most popular for makeup packaging?',
+              answer: 'Rose gold foil, holographic effects, glitter lamination, and soft-touch matte are extremely popular in the makeup category for their premium, beauty-appropriate aesthetic that resonates with consumers.'
+            },
+            {
+              question: 'Are window cut-outs available to show product shades?',
+              answer: 'Yes — window packaging is very effective for makeup, allowing customers to see shade ranges, product textures, and packaging color coordination at retail before purchasing.'
+            }
           ],
           cta: {
             title: 'Elevate Your Makeup Brand With Custom Boxes!',
@@ -2237,15 +2636,36 @@ Dispenser boxes are used for a wide range of products, including candy, hygiene 
           title: 'Learn More About Custom Lip Balm Boxes',
           subtitle: 'Compact, Eye-Catching Packaging That Maximizes Shelf Appeal for Lip Care Products',
           features: [
-            { title: 'Compact Precision Fit', description: 'Precisely sized for standard and custom lip balm tube, pot, and stick formats to ensure secure product hold and clean shelf presentation.' },
-            { title: 'Maximum Print Impact', description: 'Despite the compact format, full-color printing and premium finishes create disproportionate shelf impact relative to the small box size.' },
-            { title: 'Retail Display Optimization', description: 'Upright display orientation and hook-compatible designs maximize visibility in point-of-purchase displays, checkout counters, and beauty retail environments.' }
+            {
+              title: 'Compact Precision Fit',
+              description: 'Precisely sized for standard and custom lip balm tube, pot, and stick formats to ensure secure product hold and clean shelf presentation every time.'
+            },
+            {
+              title: 'Maximum Print Impact',
+              description: 'Despite the compact format, full-color printing and premium finishes create disproportionate shelf impact relative to the small box size.'
+            },
+            {
+              title: 'Retail Display Optimization',
+              description: 'Upright display orientation and hook-compatible designs maximize visibility in point-of-purchase displays, checkout counters, and beauty retail environments.'
+            }
           ],
           faqs: [
-            { question: 'What lip balm formats can these boxes accommodate?', answer: 'Standard twist-up tubes, round pots, squeeze tubes, rectangular sticks, tinted balm compacts, and custom-format lip balm products can all be packaged.' },
-            { question: 'Can lip balm boxes hang on retail pegs?', answer: 'Yes — we can add eurohole punchouts to lip balm boxes for hanging on retail peg displays, which is extremely effective for checkout impulse purchase positioning.' },
-            { question: 'Are multi-lip-balm set boxes available?', answer: 'Yes — gift set and multi-product boxes are available for 2, 3, 4, or more lip balms packaged together, ideal for gift sets and seasonal promotions.' },
-            { question: 'What ingredients labeling space is available?', answer: 'We design lip balm boxes with sufficient panel space for ingredient lists, SPF ratings, flavor descriptions, and all required cosmetic labeling information.' }
+            {
+              question: 'What lip balm formats can these boxes accommodate?',
+              answer: 'Standard twist-up tubes, round pots, squeeze tubes, rectangular sticks, tinted balm compacts, and custom-format lip balm products can all be packaged with a precise custom fit.'
+            },
+            {
+              question: 'Can lip balm boxes hang on retail pegs?',
+              answer: 'Yes — we can add eurohole punchouts to lip balm boxes for hanging on retail peg displays, which is extremely effective for checkout impulse purchase positioning.'
+            },
+            {
+              question: 'Are multi-lip-balm set boxes available?',
+              answer: 'Yes — gift set and multi-product boxes are available for 2, 3, 4, or more lip balms packaged together, ideal for gift sets and seasonal promotional bundles.'
+            },
+            {
+              question: 'What ingredients labeling space is available?',
+              answer: 'We design lip balm boxes with sufficient panel space for ingredient lists, SPF ratings, flavor descriptions, and all required cosmetic labeling information for regulatory compliance.'
+            }
           ],
           cta: {
             title: 'Order Custom Lip Balm Boxes Today!',
@@ -2261,15 +2681,36 @@ Dispenser boxes are used for a wide range of products, including candy, hygiene 
           title: 'Learn More About Custom Printed Cream Boxes',
           subtitle: 'Luxurious Skincare Packaging That Communicates Premium Quality at First Glance',
           features: [
-            { title: 'Jar & Tube Compatible Design', description: 'Custom-sized for cream jars, squeeze tubes, and airless pump bottles with secure fit that prevents movement and cosmetic damage.' },
-            { title: 'Luxury Finish Options', description: 'Soft-touch matte, embossed brand name, and metallic foil details create the premium tactile quality that skincare consumers associate with efficacy.' },
-            { title: 'Ingredient Communication Space', description: 'Adequate panel space for full ingredient lists, usage instructions, skin type recommendations, and dermatologist endorsements.' }
+            {
+              title: 'Jar & Tube Compatible Design',
+              description: 'Custom-sized for cream jars, squeeze tubes, and airless pump bottles with secure fit that prevents movement and cosmetic damage during shipping and retail.'
+            },
+            {
+              title: 'Luxury Finish Options',
+              description: 'Soft-touch matte, embossed brand name, and metallic foil details create the premium tactile quality that skincare consumers associate with product efficacy.'
+            },
+            {
+              title: 'Ingredient Communication Space',
+              description: 'Adequate panel space for full ingredient lists, usage instructions, skin type recommendations, and dermatologist endorsements required for skincare credibility.'
+            }
           ],
           faqs: [
-            { question: 'What cream container sizes can cream boxes accommodate?', answer: 'We produce cream boxes for 15ml, 30ml, 50ml, 100ml, and custom-size jar and tube formats. Just provide your container dimensions for a perfect-fit box.' },
-            { question: 'What finishes are most effective for premium skincare cream packaging?', answer: 'Soft-touch matte with embossed brand name is the gold standard for luxury skincare. Clean white or nude color palettes with gold or silver foil accents also perform excellently.' },
-            { question: 'Can cream boxes include usage and ingredient information?', answer: 'Yes — we design panels with full space for INCI ingredient lists, usage instructions, skin type suitability, and any required cosmetic regulatory information.' },
-            { question: 'Are eco-friendly material options available for skincare cream boxes?', answer: 'Yes — sustainable kraft, FSC-certified board, and soy-based inks are all available for brands committed to environmental responsibility in their skincare packaging.' }
+            {
+              question: 'What cream container sizes can cream boxes accommodate?',
+              answer: 'We produce cream boxes for 15ml, 30ml, 50ml, 100ml, and custom-size jar and tube formats. Just provide your container dimensions and we will engineer a perfect-fit box.'
+            },
+            {
+              question: 'What finishes are most effective for premium skincare cream packaging?',
+              answer: 'Soft-touch matte with embossed brand name is the gold standard for luxury skincare. Clean white or nude color palettes with gold or silver foil accents also perform excellently in premium skincare markets.'
+            },
+            {
+              question: 'Can cream boxes include usage and ingredient information?',
+              answer: 'Yes — we design panels with full space for INCI ingredient lists, usage instructions, skin type suitability, and any required cosmetic regulatory information.'
+            },
+            {
+              question: 'Are eco-friendly material options available for skincare cream boxes?',
+              answer: 'Yes — sustainable kraft, FSC-certified board, and soy-based inks are all available for brands committed to environmental responsibility in their skincare packaging strategy.'
+            }
           ],
           cta: {
             title: 'Package Your Skincare Creams in Premium Custom Boxes!',
@@ -2285,15 +2726,36 @@ Dispenser boxes are used for a wide range of products, including candy, hygiene 
           title: 'Learn More About Custom Makeup Tool Boxes',
           subtitle: 'Professional Packaging for Brushes, Sponges & Beauty Tools That Sells',
           features: [
-            { title: 'Tool-Specific Fit', description: 'Custom-sized with individual brush slots, sponge compartments, or tool holders that present each item clearly and prevent damage.' },
-            { title: 'Set & Collection Packaging', description: 'Design makeup tool sets, brush collections, and beauty kit packaging that positions multiple tools as a premium, gift-ready assortment.' },
-            { title: 'Visual Tool Showcase', description: 'Window cut-outs and clear panel options let customers see brush quality, bristle density, and sponge texture before purchasing.' }
+            {
+              title: 'Tool-Specific Fit',
+              description: 'Custom-sized with individual brush slots, sponge compartments, or tool holders that present each item clearly and prevent damage during shipping and display.'
+            },
+            {
+              title: 'Set & Collection Packaging',
+              description: 'Design makeup tool sets, brush collections, and beauty kit packaging that positions multiple tools as a premium, gift-ready assortment customers love.'
+            },
+            {
+              title: 'Visual Tool Showcase',
+              description: 'Window cut-outs and clear panel options let customers see brush quality, bristle density, and sponge texture before purchasing, driving conversion.'
+            }
           ],
           faqs: [
-            { question: 'Can makeup tool boxes hold full brush sets?', answer: 'Yes — we design multi-slot brush set boxes that hold 5, 10, 15, or 20+ brushes in individual positions, creating an organized, gift-ready presentation.' },
-            { question: 'Are window options available for makeup tool boxes?', answer: 'Yes — clear window panels allow customers to see brush quality and bristle details, which is highly effective for driving purchase confidence in beauty retail.' },
-            { question: 'Can makeup tool boxes be designed for gift sets?', answer: 'Absolutely — gift set packaging for makeup tools with ribbon pulls, foam or velvet liners, and premium exterior printing creates beautiful, giftable beauty presents.' },
-            { question: 'What insert materials are used to hold brushes securely?', answer: 'Custom foam cut-outs, cardboard separators, and elastic brush holders are all available depending on the tool type and packaging format required.' }
+            {
+              question: 'Can makeup tool boxes hold full brush sets?',
+              answer: 'Yes — we design multi-slot brush set boxes that hold 5, 10, 15, or 20+ brushes in individual positions, creating an organized, gift-ready presentation customers appreciate.'
+            },
+            {
+              question: 'Are window options available for makeup tool boxes?',
+              answer: 'Yes — clear window panels allow customers to see brush quality and bristle details, which is highly effective for driving purchase confidence in beauty retail environments.'
+            },
+            {
+              question: 'Can makeup tool boxes be designed for gift sets?',
+              answer: 'Absolutely — gift set packaging for makeup tools with ribbon pulls, foam or velvet liners, and premium exterior printing creates beautiful, giftable beauty presents for any occasion.'
+            },
+            {
+              question: 'What insert materials are used to hold brushes securely?',
+              answer: 'Custom foam cut-outs, cardboard separators, and elastic brush holders are all available depending on the tool type and specific packaging format required.'
+            }
           ],
           cta: {
             title: 'Package Your Makeup Tools in Premium Custom Boxes!',
@@ -2309,15 +2771,36 @@ Dispenser boxes are used for a wide range of products, including candy, hygiene 
           title: 'Learn More About Custom Serum Boxes',
           subtitle: 'Premium Packaging for High-Performance Serums That Commands Confidence & Trust',
           features: [
-            { title: 'Bottle-Secure Design', description: 'Custom-sized for dropper bottles, airless pumps, and ampoule formats with inserts that protect glass from impact and prevent dropper contamination.' },
-            { title: 'Clinical Premium Aesthetic', description: 'Clean, sophisticated design language that communicates scientific credibility and premium efficacy to skincare-savvy consumers.' },
-            { title: 'Complete Ingredient Disclosure', description: 'Full panel space for active ingredient percentages, full INCI lists, usage protocols, and clinical claims required in premium skincare.' }
+            {
+              title: 'Bottle-Secure Design',
+              description: 'Custom-sized for dropper bottles, airless pumps, and ampoule formats with inserts that protect glass from impact and prevent dropper contamination.'
+            },
+            {
+              title: 'Clinical Premium Aesthetic',
+              description: 'Clean, sophisticated design language that communicates scientific credibility and premium efficacy to skincare-savvy consumers at every touchpoint.'
+            },
+            {
+              title: 'Complete Ingredient Disclosure',
+              description: 'Full panel space for active ingredient percentages, full INCI lists, usage protocols, and clinical claims required in the premium skincare market.'
+            }
           ],
           faqs: [
-            { question: 'What serum bottle types can custom serum boxes accommodate?', answer: 'Glass dropper bottles, airless pump bottles, glass ampoules, and serum vials in standard sizes from 5ml to 50ml, plus custom sizes on request.' },
-            { question: 'What design aesthetic works best for premium serum packaging?', answer: 'Minimalist design with high-quality materials is most effective — clean white or dark packaging with metallic foil ingredient callouts and soft-touch finish communicates clinical luxury powerfully.' },
-            { question: 'Are UV protection coatings available for light-sensitive serums?', answer: 'Yes — opaque materials and light-blocking coatings are available for packaging serums containing light-sensitive active ingredients like vitamin C and retinol.' },
-            { question: 'Can active ingredient percentages be prominently featured on serum boxes?', answer: 'Yes — active ingredient callouts are a critical purchasing driver for skincare consumers. We design serum boxes to feature active percentages prominently while maintaining elegant aesthetics.' }
+            {
+              question: 'What serum bottle types can custom serum boxes accommodate?',
+              answer: 'Glass dropper bottles, airless pump bottles, glass ampoules, and serum vials in standard sizes from 5ml to 50ml, plus any custom sizes on request.'
+            },
+            {
+              question: 'What design aesthetic works best for premium serum packaging?',
+              answer: 'Minimalist design with high-quality materials is most effective — clean white or dark packaging with metallic foil ingredient callouts and soft-touch finish communicates clinical luxury powerfully.'
+            },
+            {
+              question: 'Are UV protection coatings available for light-sensitive serums?',
+              answer: 'Yes — opaque materials and light-blocking coatings are available for packaging serums containing light-sensitive active ingredients like vitamin C and retinol.'
+            },
+            {
+              question: 'Can active ingredient percentages be prominently featured on serum boxes?',
+              answer: 'Yes — active ingredient callouts are a critical purchasing driver for skincare consumers. We design serum boxes to feature active percentages prominently while maintaining elegant aesthetics.'
+            }
           ],
           cta: {
             title: 'Package Your Premium Serums With Custom Luxury Boxes!',
@@ -2333,19 +2816,40 @@ Dispenser boxes are used for a wide range of products, including candy, hygiene 
           title: 'Learn More About Cosmetic Display Boxes',
           subtitle: 'Retail-Ready Display Packaging That Stops Shoppers & Drives Beauty Sales',
           features: [
-            { title: 'Point-of-Purchase Impact', description: 'Designed for maximum visual impact at retail counters, display stands, and shelving — turning browsers into buyers through compelling presentation.' },
-            { title: 'Multi-Product Display Capacity', description: 'Holds multiple product units in organized, visually appealing arrangements that showcase your full product line at once.' },
-            { title: 'Brand Storytelling Canvas', description: 'Large display surface provides space for before/after imagery, ingredient stories, brand messaging, and lifestyle photography.' }
+            {
+              title: 'Point-of-Purchase Impact',
+              description: 'Designed for maximum visual impact at retail counters, display stands, and shelving — turning browsers into buyers through compelling product presentation.'
+            },
+            {
+              title: 'Multi-Product Display Capacity',
+              description: 'Holds multiple product units in organized, visually appealing arrangements that showcase your full product line simultaneously to maximize retail exposure.'
+            },
+            {
+              title: 'Brand Storytelling Canvas',
+              description: 'Large display surface provides space for before/after imagery, ingredient stories, brand messaging, and lifestyle photography that connects with consumers.'
+            }
           ],
           faqs: [
-            { question: 'Can cosmetic display boxes hold multiple products at once?', answer: 'Yes — cosmetic display boxes are specifically designed to hold and display multiple units simultaneously, making them ideal for retail countertop and freestanding display programs.' },
-            { question: 'Are cosmetic display boxes suitable for trade show use?', answer: 'Absolutely — custom display boxes create professional, branded product presentations at trade shows, beauty exhibitions, and pop-up retail events.' },
-            { question: 'Can the display include testers or demo product access?', answer: 'Yes — we can design display boxes with accessible tester compartments or open-front designs that allow customers to interact with products before purchase.' },
-            { question: 'What sizes are available for cosmetic display boxes?', answer: 'From compact counter displays to large freestanding floor displays, we produce cosmetic display boxes in any format and quantity configuration required.' }
+            {
+              question: 'Can cosmetic display boxes hold multiple products at once?',
+              answer: 'Yes — cosmetic display boxes are specifically designed to hold and display multiple units simultaneously, making them ideal for retail countertop and freestanding display programs.'
+            },
+            {
+              question: 'Are cosmetic display boxes suitable for trade show use?',
+              answer: 'Absolutely — custom display boxes create professional, branded product presentations at trade shows, beauty exhibitions, and pop-up retail events that build brand credibility.'
+            },
+            {
+              question: 'Can the display include testers or demo product access?',
+              answer: 'Yes — we can design display boxes with accessible tester compartments or open-front designs that allow customers to interact with products before making a purchase.'
+            },
+            {
+              question: 'What sizes are available for cosmetic display boxes?',
+              answer: 'From compact counter displays to large freestanding floor displays, we produce cosmetic display boxes in any format and quantity configuration your retail program requires.'
+            }
           ],
           cta: {
             title: 'Maximize Retail Sales With Custom Cosmetic Display Boxes!',
-            subtitle: 'Turn any retail surface into a beauty brand showcase — custom display boxes that attract, engage, and convert shoppers into customers.'
+            subtitle: 'Turn any retail surface into a beauty brand showcase — custom display boxes that attract, engage, and convert shoppers into loyal customers.'
           }
         }
       },
@@ -2357,15 +2861,36 @@ Dispenser boxes are used for a wide range of products, including candy, hygiene 
           title: 'Learn More About Hair Extension Boxes',
           subtitle: 'Protective, Stylish Packaging That Showcases the Quality of Your Hair Extensions',
           features: [
-            { title: 'Extension-Length Compatible', description: 'Custom box lengths from 10 to 30+ inches accommodate all extension lengths without folding or compressing the hair product.' },
-            { title: 'Hair-Safe Interior', description: 'Smooth interior surfaces and secure placement prevent tangling, crimping, and static damage that ruins hair extension quality.' },
-            { title: 'Luxury Brand Presentation', description: 'Premium exterior printing and finishes that communicate the quality and value of your hair extensions to style-conscious consumers.' }
+            {
+              title: 'Extension-Length Compatible',
+              description: 'Custom box lengths from 10 to 30+ inches accommodate all extension lengths without folding or compressing the hair product in any way.'
+            },
+            {
+              title: 'Hair-Safe Interior',
+              description: 'Smooth interior surfaces and secure placement prevent tangling, crimping, and static damage that ruins hair extension quality before the customer even opens the box.'
+            },
+            {
+              title: 'Luxury Brand Presentation',
+              description: 'Premium exterior printing and finishes that communicate the quality and value of your hair extensions to style-conscious consumers at every touchpoint.'
+            }
           ],
           faqs: [
-            { question: 'What extension types can hair extension boxes accommodate?', answer: 'Clip-in extensions, tape-in bundles, weft extensions, ponytail extensions, and full wigs in all standard and custom lengths from 10 to 32 inches.' },
-            { question: 'Are window cut-outs available to show hair texture and color?', answer: 'Yes — window panels are very effective for hair extensions, allowing customers to assess hair texture, thickness, and color accuracy before purchasing.' },
-            { question: 'Can hair extension boxes include care instruction cards?', answer: 'Yes — we can design packaging with dedicated insert card slots or instruction booklet compartments to include care, styling, and maintenance information.' },
-            { question: 'Are bundle packaging options available for multiple wefts?', answer: 'Yes — multi-weft bundle packaging that holds 2, 3, or 4 weft bundles together in organized positions is available for complete hair extension set packaging.' }
+            {
+              question: 'What extension types can hair extension boxes accommodate?',
+              answer: 'Clip-in extensions, tape-in bundles, weft extensions, ponytail extensions, and full wigs in all standard and custom lengths from 10 to 32 inches and beyond.'
+            },
+            {
+              question: 'Are window cut-outs available to show hair texture and color?',
+              answer: 'Yes — window panels are very effective for hair extensions, allowing customers to assess hair texture, thickness, and color accuracy before purchasing at retail.'
+            },
+            {
+              question: 'Can hair extension boxes include care instruction cards?',
+              answer: 'Yes — we can design packaging with dedicated insert card slots or instruction booklet compartments to include care, styling, and maintenance information for customers.'
+            },
+            {
+              question: 'Are bundle packaging options available for multiple wefts?',
+              answer: 'Yes — multi-weft bundle packaging that holds 2, 3, or 4 weft bundles together in organized positions is available for complete hair extension set packaging.'
+            }
           ],
           cta: {
             title: 'Package Your Hair Extensions in Premium Custom Boxes!',
@@ -2381,15 +2906,36 @@ Dispenser boxes are used for a wide range of products, including candy, hygiene 
           title: 'Learn More About Custom Cosmetic Labels',
           subtitle: 'High-Quality Custom Labels That Make Your Cosmetic Products Shine on Any Surface',
           features: [
-            { title: 'Premium Adhesive Durability', description: 'Long-lasting adhesive specifically formulated for cosmetic containers — resistant to moisture, oils, and the daily handling beauty products endure.' },
-            { title: 'Any Shape & Size', description: 'Die-cut to any custom shape including rounds, ovals, rectangles, and complex custom shapes that complement your container design.' },
-            { title: 'Vibrant Print Quality', description: 'High-resolution printing that reproduces brand colors, ingredient text, and imagery with exceptional clarity even on small label formats.' }
+            {
+              title: 'Premium Adhesive Durability',
+              description: 'Long-lasting adhesive specifically formulated for cosmetic containers — resistant to moisture, oils, and the daily handling beauty products endure in use.'
+            },
+            {
+              title: 'Any Shape & Size',
+              description: 'Die-cut to any custom shape including rounds, ovals, rectangles, and complex custom shapes that complement your container design perfectly.'
+            },
+            {
+              title: 'Vibrant Print Quality',
+              description: 'High-resolution printing that reproduces brand colors, ingredient text, and imagery with exceptional clarity even on the smallest label formats.'
+            }
           ],
           faqs: [
-            { question: 'What surfaces do cosmetic labels adhere to?', answer: 'Our cosmetic labels are formulated to adhere permanently to glass, plastic (PP, PE, PET), metal, and cardboard surfaces commonly used in cosmetic containers.' },
-            { question: 'Are waterproof cosmetic labels available?', answer: 'Yes — waterproof and water-resistant label materials are available for products used in wet environments like shower gels, serums, and toners.' },
-            { question: 'Can cosmetic labels include metallic foil effects?', answer: 'Yes — hot foil stamping in gold, silver, rose gold, and custom metallic colors can be applied to cosmetic labels for a premium, luxury-product appearance.' },
-            { question: 'Are cosmetic labels compliant with FDA labeling requirements?', answer: 'We can help you design labels with the required elements for FDA cosmetic compliance including ingredient lists, net weight, manufacturer information, and applicable warnings.' }
+            {
+              question: 'What surfaces do cosmetic labels adhere to?',
+              answer: 'Our cosmetic labels are formulated to adhere permanently to glass, plastic (PP, PE, PET), metal, and cardboard surfaces commonly used in cosmetic containers.'
+            },
+            {
+              question: 'Are waterproof cosmetic labels available?',
+              answer: 'Yes — waterproof and water-resistant label materials are available for products used in wet environments like shower gels, serums, and toners that experience moisture regularly.'
+            },
+            {
+              question: 'Can cosmetic labels include metallic foil effects?',
+              answer: 'Yes — hot foil stamping in gold, silver, rose gold, and custom metallic colors can be applied to cosmetic labels for a premium, luxury-product appearance that stands out.'
+            },
+            {
+              question: 'Are cosmetic labels compliant with FDA labeling requirements?',
+              answer: 'We can help you design labels with the required elements for FDA cosmetic compliance including ingredient lists, net weight, manufacturer information, and applicable warnings.'
+            }
           ],
           cta: {
             title: 'Order Custom Cosmetic Labels That Elevate Your Brand!',
@@ -2405,15 +2951,36 @@ Dispenser boxes are used for a wide range of products, including candy, hygiene 
           title: 'Learn More About Custom Lipstick Boxes',
           subtitle: 'Glamorous, Precisely Fitted Packaging for Lipsticks That Sells Itself',
           features: [
-            { title: 'Lipstick-Precise Fit', description: 'Sized to the millimeter for your specific lipstick bullet dimensions, ensuring the product sits perfectly upright with no movement or rattling.' },
-            { title: 'Glamorous Beauty Aesthetic', description: 'Rich color printing, metallic foil shades, and soft-touch finishes that communicate the glamour and luxury of a premium lipstick product.' },
-            { title: 'Shade Family Cohesion', description: 'Design families that visually unite a full shade range while individually distinguishing each color — essential for lipstick line retail presentation.' }
+            {
+              title: 'Lipstick-Precise Fit',
+              description: 'Sized to the millimeter for your specific lipstick bullet dimensions, ensuring the product sits perfectly upright with no movement or rattling in transit or on shelves.'
+            },
+            {
+              title: 'Glamorous Beauty Aesthetic',
+              description: 'Rich color printing, metallic foil shades, and soft-touch finishes that communicate the glamour and luxury of a premium lipstick product to beauty consumers.'
+            },
+            {
+              title: 'Shade Family Cohesion',
+              description: 'Design families that visually unite a full shade range while individually distinguishing each color — essential for lipstick line retail presentation and brand recognition.'
+            }
           ],
           faqs: [
-            { question: 'Can lipstick boxes accommodate different bullet shapes?', answer: 'Yes — round, square, oval, and custom bullet cross-sections are all accommodated with precisely engineered insert openings that hold each format securely.' },
-            { question: 'How can shade be communicated on lipstick packaging?', answer: 'Shade name typography, color-coded design elements, shade swatch printing, and pantone-matched packaging color are all effective approaches for communicating lipstick shades at retail.' },
-            { question: 'Are window cut-outs available for lipstick boxes?', answer: 'Yes — window cut-outs that reveal the lipstick bullet and shade are very effective at retail, allowing customers to assess the exact color before purchasing.' },
-            { question: 'What premium finishes are most popular for lipstick packaging?', answer: 'Rose gold foil on black packaging, gloss lamination with gold name foiling, and holographic elements are all extremely popular in the premium lipstick packaging category.' }
+            {
+              question: 'Can lipstick boxes accommodate different bullet shapes?',
+              answer: 'Yes — round, square, oval, and custom bullet cross-sections are all accommodated with precisely engineered insert openings that hold each format securely without movement.'
+            },
+            {
+              question: 'How can shade be communicated on lipstick packaging?',
+              answer: 'Shade name typography, color-coded design elements, shade swatch printing, and Pantone-matched packaging color are all effective approaches for communicating lipstick shades clearly at retail.'
+            },
+            {
+              question: 'Are window cut-outs available for lipstick boxes?',
+              answer: 'Yes — window cut-outs that reveal the lipstick bullet and shade are very effective at retail, allowing customers to assess the exact color before purchasing.'
+            },
+            {
+              question: 'What premium finishes are most popular for lipstick packaging?',
+              answer: 'Rose gold foil on black packaging, gloss lamination with gold name foiling, and holographic elements are all extremely popular in the premium lipstick packaging category worldwide.'
+            }
           ],
           cta: {
             title: 'Package Your Lipsticks in Glamorous Custom Boxes!',
@@ -2422,5 +2989,5 @@ Dispenser boxes are used for a wide range of products, including candy, hygiene 
         }
       }
     ]
-  }
+  },
 }
